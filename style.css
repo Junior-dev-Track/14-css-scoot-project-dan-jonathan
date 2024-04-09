@@ -63,13 +63,15 @@ body {
   width: 100vw;
 }
 
-header, nav, footer {
+header,
+main,
+footer {
   width: 100%;
-  margin: 0 auto;
 }
 
 .container {
   max-width: 1110px;
+  margin: 0 auto;
 }
 
 body {
@@ -138,7 +140,6 @@ footer h2 {
   color: #f2f5f9;
 }
 
-
 header {
   display: flex;
   align-items: center;
@@ -168,7 +169,8 @@ ul li {
   width: 180px;
   height: 53px;
   background-color: #fcb72b;
-=======
+}
+
 footer > * > * {
   margin: 0 auto;
 }
