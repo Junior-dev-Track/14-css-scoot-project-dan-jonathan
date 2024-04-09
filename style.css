@@ -181,7 +181,7 @@ footer nav .nav__container .footer__socials i {
   color: #fcb72b;
 }
 footer nav .nav__container .footer__socials i:not(:last-child) {
-  margin-right: clamp(20px, 3vw, 24px);
+  margin-right: 24px;
 }
 
 @media screen and (width <= 768px) {
