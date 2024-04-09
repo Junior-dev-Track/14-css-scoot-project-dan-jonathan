@@ -1,6 +1,7 @@
 *.sketch
 *.fig
 *.xd
+*:Zone.Identifier
 
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
@@ -16,4 +17,6 @@ node_modules/
 .env
 .env.*
 .css.map
+
+
 
