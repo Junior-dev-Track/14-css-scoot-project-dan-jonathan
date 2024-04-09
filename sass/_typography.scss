@@ -1,0 +1,72 @@
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+	line-height: 1em;
+	color: $grey-dim;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav {
+	font-family: 'Space Mono', monospace;
+	font-weight: bold;
+}
+
+h2,
+h3,
+h4 {
+	color: $navy-dark;
+}
+
+h1 {
+	font-size: clamp(40px, 5vw, 56px);
+	line-height: 56px;
+	letter-spacing: -2.5px;
+	color: $snow;
+}
+
+h2 {
+	// font-size: 48px;
+	font-size: clamp(32px, 4vw, 48px);
+	line-height: 48px;
+	letter-spacing: -2.14px;
+}
+
+h3 {
+	font-size: clamp(24px, 3.5vw, 40px);
+	line-height: 48px;
+	letter-spacing: -1.79px;
+}
+
+h4 {
+	font-size: clamp(20px, 3vw, 24px);
+	line-height: 28px;
+	letter-spacing: -1.07px;
+}
+
+.hero {
+	color: $snow;
+}
+
+nav a {
+	color: $grey-dim;
+}
+
+a.cta {
+	color: $snow;
+
+	&:hover {
+		color: $yellow;
+	}
+}
+
+footer {
+	h2 {
+		color: $snow;
+	}
+}
