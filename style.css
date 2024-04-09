@@ -138,6 +138,37 @@ footer h2 {
   color: #f2f5f9;
 }
 
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.scoot {
+  display: flex;
+  align-self: flex-end;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 249px;
+  height: 25px;
+}
+
+ul li {
+  text-decoration: none;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 53px;
+  background-color: #fcb72b;
+=======
 footer > * > * {
   margin: 0 auto;
 }
