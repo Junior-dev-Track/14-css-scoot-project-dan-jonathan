@@ -138,40 +138,34 @@ footer h2 {
   color: #f2f5f9;
 }
 
-header {
-  width: 100vw;
-  height: 96px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .container {
+.container {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .header_mobil {
-  display: none;
+.container .header_desktop {
+  width: 100vw;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header nav img {
-  display: none;
-}
-header nav ul {
+.container .header_desktop nav ul {
   display: flex;
   align-items: center;
   -moz-column-gap: 15px;
        column-gap: 15px;
 }
-header nav ul {
+.container .header_desktop nav ul {
   padding-left: 30px;
 }
-header nav ul li a {
+.container .header_desktop nav ul li a {
   display: inline-block;
   text-decoration: none;
 }
-header .cta {
+.container .header_desktop .cta {
   width: 180px;
   height: 53px;
   display: flex;
@@ -181,47 +175,51 @@ header .cta {
   border-color: 1px solid #fcb72b;
   transition: background-color 0.3s ease;
 }
-header .cta:hover {
+.container .header_desktop .cta:hover {
   background-color: white;
   border: 1px solid #fcb72b;
+}
+.container .header_mobil {
+  display: none;
+}
+.container .nav_mobil {
+  display: none;
 }
 
 /********************************************/
 @media screen and (max-width: 576px) {
-  header {
-    width: 100vw;
+  .container {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container .header_desktop {
+    display: none;
+  }
+  .container .header_mobil {
+    width: 100%;
     height: 96px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .container .nav_mobil.active {
+    width: 50%;
+    height: 200px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: grey;
+  }
+  .container .cta {
+    width: 180px;
+    height: 53px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  header .container {
-    width: 100%;
-    display: flex;
-    align-content: center;
-  }
-  header .scoot {
-    display: none;
-  }
-  header .header_mobil {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-  }
-  header .button_menu_burger {
-    grid-column: 1/2;
-    display: flex;
-  }
-  header .scoot_svg {
-    grid-column: 2/3;
-    display: flex;
-  }
-  header nav ul {
-    display: none;
-  }
-  header .cta {
-    display: none;
+    background-color: #fcb72b;
+    border-color: 1px solid #fcb72b;
   }
 }
 footer > * > * {
