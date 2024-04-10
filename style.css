@@ -63,13 +63,19 @@ body {
   width: 100vw;
 }
 
-header, nav, footer {
+a {
+  cursor: pointer;
+}
+
+header,
+nav,
+footer {
   width: 100%;
-  margin: 0 auto;
 }
 
 .container {
   max-width: 1110px;
+  margin: 0 auto;
 }
 
 body {
@@ -138,26 +144,35 @@ footer h2 {
   color: #f2f5f9;
 }
 
-.container {
-  width: 100%;
-  height: auto;
+
+header {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .container .header_desktop {
   width: 100vw;
   height: 96px;
+
+header .scoot {
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container .header_desktop nav ul {
+
+header ul {
+
   display: flex;
   align-items: center;
   -moz-column-gap: 15px;
        column-gap: 15px;
 }
+
 .container .header_desktop nav ul {
   padding-left: 30px;
 }
@@ -166,12 +181,22 @@ footer h2 {
   text-decoration: none;
 }
 .container .header_desktop .cta {
+
+header ul li {
+  text-decoration: none;
+}
+header .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 180px;
   height: 53px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fcb72b;
+
   border-color: 1px solid #fcb72b;
   transition: background-color 0.3s ease;
 }
@@ -222,10 +247,17 @@ footer h2 {
     border-color: 1px solid #fcb72b;
   }
 }
+
+}
+
+
 footer > * > * {
   margin: 0 auto;
 }
 footer .signup {
+  background-image: url("../images/decoration/rond_footer.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   padding: 116px;
   background-color: #495567;
 }
@@ -249,9 +281,10 @@ footer nav {
 }
 footer nav .nav__container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 110px 2fr 1fr;
   align-content: space-between;
   align-items: center;
+  gap: 52px;
 }
 footer nav .nav__container .nav__menu {
   display: flex;
@@ -282,7 +315,15 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
     justify-self: center;
   }
 }
-@media screen and (width <= 425px) {
+@media screen and (576px <= width <= 676px) {
+  footer nav .nav__container {
+    gap: 8px;
+  }
+  footer nav .nav__container .footer__socials i:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+@media screen and (width <= 576px) {
   footer .signup {
     padding: 96px 40px;
   }
