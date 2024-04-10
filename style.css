@@ -148,6 +148,9 @@ footer > * > * {
   margin: 0 auto;
 }
 footer .signup {
+  background-image: url("../images/decoration/rond_footer.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
   padding: 116px;
   background-color: #495567;
 }
