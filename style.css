@@ -144,112 +144,76 @@ footer h2 {
   color: #f2f5f9;
 }
 
-
 header {
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /********************************************/
 }
-
-.container .header_desktop {
-  width: 100vw;
+header .header_desktop {
+  width: 100%;
   height: 96px;
-
-header .scoot {
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.container .header_desktop nav ul {
-
-header ul {
-
+header .header_desktop nav ul {
   display: flex;
   align-items: center;
   -moz-column-gap: 15px;
        column-gap: 15px;
 }
-
-.container .header_desktop nav ul {
+header .header_desktop nav ul {
   padding-left: 30px;
 }
-.container .header_desktop nav ul li a {
+header .header_desktop nav ul li a {
   display: inline-block;
   text-decoration: none;
 }
-.container .header_desktop .cta {
-
-header ul li {
-  text-decoration: none;
-}
-header .cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 180px;
-  height: 53px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fcb72b;
-
-  border-color: 1px solid #fcb72b;
-  transition: background-color 0.3s ease;
-}
-.container .header_desktop .cta:hover {
-  background-color: white;
-  border: 1px solid #fcb72b;
-}
-.container .header_mobil {
+header .header_mobil {
   display: none;
 }
-.container .nav_mobil {
+header .nav_mobil {
   display: none;
 }
-
-/********************************************/
 @media screen and (max-width: 576px) {
-  .container {
+  header .container {
     width: 100%;
     height: auto;
     display: inline-block;
     justify-content: space-between;
     align-items: center;
   }
-  .container .header_desktop {
+  header .container .header_desktop {
     display: none;
   }
-  .container .header_mobil {
+  header .container .header_mobil {
     width: 100%;
     height: 96px;
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 3fr 1fr;
   }
-  .container .nav_mobil.active {
+  header .container .nav_mobil.active {
     width: 50%;
     height: 200px;
     display: inline-block;
     text-decoration: none;
     background-color: grey;
   }
-  .container .cta {
-    width: 180px;
-    height: 53px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fcb72b;
-    border-color: 1px solid #fcb72b;
-  }
 }
 
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 53px;
+  background-color: #fcb72b;
+  border-color: 1px solid #fcb72b;
+  transition: background-color 0.3s ease;
 }
-
+.cta:hover {
+  background-color: white;
+  border: 1px solid #fcb72b;
+}
 
 footer > * > * {
   margin: 0 auto;
