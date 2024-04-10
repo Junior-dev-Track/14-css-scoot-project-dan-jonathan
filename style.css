@@ -63,6 +63,12 @@ body {
   width: 100vw;
 }
 
+
+a {
+  cursor: pointer;
+}
+
+
 header,
 main,
 footer {

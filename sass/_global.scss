@@ -4,13 +4,19 @@ body {
 	width: 100vw;
 }
 
+a {
+	cursor: pointer;
+}
+
 header,
-main,
+nav,
 footer {
 	width: 100%;
 }
 
 .container {
 	max-width: 1110px;
+
 	margin: 0 auto;
+
 }
