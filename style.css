@@ -63,14 +63,12 @@ body {
   width: 100vw;
 }
 
-
 a {
   cursor: pointer;
 }
 
-
 header,
-main,
+nav,
 footer {
   width: 100%;
 }
@@ -200,9 +198,7 @@ footer nav {
 }
 footer nav .nav__container {
   display: grid;
-
   grid-template-columns: 110px 2fr 1fr;
-
   align-content: space-between;
   align-items: center;
   gap: 52px;
