@@ -63,7 +63,13 @@ body {
   width: 100vw;
 }
 
-header, nav, footer {
+a {
+  cursor: pointer;
+}
+
+header,
+nav,
+footer {
   width: 100%;
   margin: 0 auto;
 }
