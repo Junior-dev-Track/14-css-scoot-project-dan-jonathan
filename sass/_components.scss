@@ -1,0 +1,10 @@
+@import './variables';
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 53px;
+    background-color: $yellow;
+}
