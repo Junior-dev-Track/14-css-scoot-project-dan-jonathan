@@ -1,59 +1,34 @@
 @import './variables';
 
 header {
-	display: flex;
-	align-items: center;
-
-	.scoot {
+	.header_desktop {
+		width: 100%;
+		height: 96px;
 		display: flex;
-		align-self: flex-end;
-	}
-	ul {
-		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 
-		.header_desktop {
-			width: 100vw;
-			height: 96px;
+		nav ul {
 			display: flex;
-			justify-content: center;
 			align-items: center;
-
-			nav ul {
-				display: flex;
-				align-items: center;
-				column-gap: 15px;
-			}
-			nav ul {
-				padding-left: 30px;
-			}
-			nav ul li a {
-				display: inline-block;
-				text-decoration: none;
-			}
-			.cta {
-				width: 180px;
-				height: 53px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background-color: $yellow;
-				border-color: 1px solid $yellow;
-				transition: background-color 0.3s ease;
-			}
-			.cta:hover {
-				background-color: white;
-				border: 1px solid $yellow;
-			}
+			column-gap: 15px;
 		}
-		.header_mobil {
-			display: none;
+		nav ul {
+			padding-left: 30px;
 		}
-		.nav_mobil {
-			display: none;
+		nav ul li a {
+			display: inline-block;
+			text-decoration: none;
 		}
 	}
+
+	.header_mobil {
+		display: none;
+	}
+	.nav_mobil {
+		display: none;
+	}
+
 
 	/********************************************/
 	@media screen and (max-width: 576px) {
@@ -83,15 +58,7 @@ header {
 				text-decoration: none;
 				background-color: grey;
 			}
-			.cta {
-				width: 180px;
-				height: 53px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background-color: $yellow;
-				border-color: 1px solid $yellow;
-			}
+
 		}
 	}
 }
