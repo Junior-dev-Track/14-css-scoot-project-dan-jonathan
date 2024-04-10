@@ -8,7 +8,7 @@
 .prettierignore
 
 # Avoid a folder to be uploaded
-assets/
+# assets/
 design/
 node_modules/
 .git/
