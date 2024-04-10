@@ -249,32 +249,77 @@ footer h2 {
   color: #f2f5f9;
 }
 
-header {
+
+header .header_desktop {
+  width: 100%;
   display: flex;
   align-items: center;
+  
 }
-header .scoot {
-  display: flex;
-  align-self: flex-end;
+
+
+
+header .header_desktop nav ul {
+  padding-left: 30px;
 }
-header ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 249px;
-  height: 25px;
-}
-header ul li {
+header .header_desktop nav ul li a {
+  display: inline-block;
   text-decoration: none;
 }
-header .cta {
+header .header_mobil {
+  display: none;
+}
+
+
+
+header .nav_mobil {
+  display: none;
+}
+  
+@media screen and (max-width: 576px) {
+  header .container {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .container .header_desktop {
+    display: none;
+  }
+  header .container .header_mobil {
+    width: 100%;
+    height: 96px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  header .container .nav_mobil.active {
+    width: 50%;
+    height: 200px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: grey;
+  }
+
+}
+
+.cta {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 180px;
   height: 53px;
   background-color: #fcb72b;
+  border-color: 1px solid #fcb72b;
+  transition: background-color 0.3s ease;
 }
+.cta:hover {
+  background-color: white;
+  border: 1px solid #fcb72b;
+}
+
+
 
 footer > * > * {
   margin: 0 auto;
