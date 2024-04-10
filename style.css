@@ -144,25 +144,21 @@ header {
   display: flex;
   align-items: center;
 }
-
-.scoot {
+header .scoot {
   display: flex;
   align-self: flex-end;
 }
-
-ul {
+header ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 249px;
   height: 25px;
 }
-
-ul li {
+header ul li {
   text-decoration: none;
 }
-
-.cta {
+header .cta {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,7 +194,7 @@ footer nav {
 }
 footer nav .nav__container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr minmax(125px, 1fr);
   align-content: space-between;
   align-items: center;
 }

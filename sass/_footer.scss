@@ -33,7 +33,7 @@ footer {
 
 		.nav__container {
 			display: grid;
-			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-columns: 1fr 2fr minmax(1);
 			align-content: space-between;
 			align-items: center;
 
