@@ -194,9 +194,12 @@ footer nav {
 }
 footer nav .nav__container {
   display: grid;
-  grid-template-columns: 1fr 2fr minmax(125px, 1fr);
+
+  grid-template-columns: 110px 2fr 1fr;
+
   align-content: space-between;
   align-items: center;
+  gap: 52px;
 }
 footer nav .nav__container .nav__menu {
   display: flex;
@@ -227,7 +230,15 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
     justify-self: center;
   }
 }
-@media screen and (width <= 425px) {
+@media screen and (576px <= width <= 676px) {
+  footer nav .nav__container {
+    gap: 8px;
+  }
+  footer nav .nav__container .footer__socials i:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+@media screen and (width <= 576px) {
   footer .signup {
     padding: 96px 40px;
   }
