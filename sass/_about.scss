@@ -60,13 +60,13 @@
 		padding: 40px;
 		color: $navy-dark;
 		margin-bottom: 16px;
-		cursor: pointer;
-
+		
 		&:hover {
 			background-color: $yellow-light;
 		}
 	}
 	summary {
+		cursor: pointer;
 		list-style: none;
 		display: flex;
 		justify-content: space-between;
