@@ -182,6 +182,11 @@ main {
   margin: 0 auto;
 }
 
+@media screen and (width <= 1110px) {
+  .container {
+    padding: 0 clamp(2vw, 16px, 4vw);
+  }
+}
 body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
@@ -369,14 +374,11 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
     justify-self: unset;
   }
 }
-section {
-  margin-bottom: 64px;
-}
-
 .hero {
   padding: 152px 0;
   overflow: hidden;
   display: flex;
+  margin-bottom: 164px;
 }
 .hero.home {
   background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/home/home_header_photo.png");
@@ -426,6 +428,10 @@ section {
   height: 15px;
   background-image: url("../images/decoration/home/trait_header.svg");
   background-repeat: no-repeat;
+}
+
+.features, .reasons {
+  margin-bottom: 194px;
 }
 
 .features {
@@ -527,6 +533,7 @@ section {
   .hero {
     padding: 137px 0 206px 0;
     display: flex;
+    margin-bottom: 125px;
   }
   .hero.home {
     background-position: center;
@@ -558,14 +565,19 @@ section {
   .hero .hero__content .hero__paragraph::before {
     display: none;
   }
+  .features, .reasons {
+    margin-bottom: 140px;
+  }
   .features {
     flex-direction: column;
     width: 75%;
+    margin: auto;
   }
   .features::after {
     transform: rotate(90deg);
-    left: -238px;
-    top: 80px;
+    left: 0;
+    top: 0;
+    bottom: 0px;
   }
   .features .features__item {
     grid-template-columns: 100px 1fr;
@@ -604,6 +616,7 @@ section {
 @media screen and (width <= 576px) {
   .hero {
     padding: 115px 0 172px 0;
+    margin-bottom: 125px;
   }
   .hero.home {
     background-position: 80%;
@@ -617,6 +630,9 @@ section {
   }
   .hero .hero__content .hero__text {
     width: 80%;
+  }
+  .features, .reasons {
+    margin-bottom: 125px;
   }
   .features {
     flex-direction: column;
