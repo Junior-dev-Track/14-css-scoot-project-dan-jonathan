@@ -182,6 +182,11 @@ main {
   margin: 0 auto;
 }
 
+@media screen and (width <= 1110px) {
+  .container {
+    padding: 0 clamp(2vw, 16px, 4vw);
+  }
+}
 body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
@@ -205,20 +210,20 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(40px, 5vw, 56px);
-  line-height: clamp(40px, 5vw, 56px);
+  font-size: clamp(40px, 9vw, 56px);
+  line-height: clamp(40px, 9vw, 56px);
   letter-spacing: -2.5px;
   color: #f2f5f9;
 }
 
 h2 {
-  font-size: clamp(32px, 4vw, 48px);
-  line-height: clamp(32px, 4vw, 48px);
+  font-size: clamp(32px, 7vw, 48px);
+  line-height: clamp(32px, 7vw, 48px);
   letter-spacing: -2.14px;
 }
 
 h3 {
-  font-size: clamp(24px, 3.5vw, 40px);
+  font-size: clamp(24px, 5.5vw, 40px);
   line-height: 48px;
   letter-spacing: -1.79px;
 }
@@ -258,19 +263,11 @@ header .header_desktop {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+
 header .header_desktop nav ul {
   display: flex;
   align-items: center;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
-}
-header .header_desktop nav ul {
-  padding-left: 30px;
-}
-header .header_desktop nav ul li a {
-  display: inline-block;
-  text-decoration: none;
+  gap: 15px;
 }
 header .header_mobil {
   display: none;
@@ -495,7 +492,7 @@ section {
 }
 
 .reasons img {
-  border-radius: 100%;
+  border-radius: 50%;
 }
 .reasons .reasons__article {
   display: flex;
@@ -535,8 +532,8 @@ section {
 .reasons .reasons__article .article__image::before {
   position: absolute;
   content: "";
-  width: 445px;
-  height: 445px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #e5ecf4;
   right: -508px;
@@ -679,6 +676,7 @@ section {
     top: 0px;
   }
 }
+
 section.advantages {
   text-align: center;
   display: grid;
@@ -772,5 +770,120 @@ section.jobs .job {
   }
   section.jobs .cta {
     width: 100%;
+=======
+.hero__small {
+  padding: 72px 0;
+  overflow: hidden;
+  position: relative;
+}
+.hero__small::after {
+  position: absolute;
+  content: "";
+  width: 234px;
+  height: 62px;
+  background-repeat: no-repeat;
+}
+.hero__small::after {
+  top: 0;
+  right: 0;
+  background-image: url("../images/decoration/home/rond_header.svg");
+  background-repeat: no-repeat;
+  transform: translate(15%, 100%);
+}
+.hero__small.about {
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/about/header_photo.png");
+  background-size: cover;
+}
+
+.reasons.about .reasons__article:nth-child(1) .article__arrow {
+  transform: scaleY(-1);
+  right: -170px;
+  bottom: 30px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 102px;
+}
+.faq .faq__questions {
+  display: grid;
+  grid-template-columns: 31.5% 1fr;
+  gap: 106px;
+  margin-bottom: 60px;
+}
+.faq details {
+  background-color: #f2f5f9;
+  padding: 40px;
+  color: #495567;
+  margin-bottom: 16px;
+}
+.faq summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: height 5s ease;
+}
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+.faq summary:after {
+  content: "";
+  color: #fcb72b;
+  width: 18px;
+  min-width: 24px;
+  font-size: 32px;
+  margin-left: 16px;
+  background-image: url("../images/about/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: transform 0.5s ease;
+}
+.faq details[open] summary:after {
+  content: "";
+  transform: rotate(180deg);
+}
+.faq details[open] summary {
+  margin-bottom: 24px;
+}
+
+@media screen and (width <= 768px) {
+  .hero__small .hero__text {
+    padding-left: 60px;
+  }
+  .hero__small.about {
+    background-size: auto;
+    background-position: 36% 50%;
+  }
+  .faq h2 {
+    margin-bottom: 72px;
+  }
+  .faq h3 {
+    text-align: center;
+  }
+  .faq .faq__questions {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+@media screen and (width <= 576px) {
+  .hero__small {
+    padding: 52px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .hero__small::after {
+    display: none;
+  }
+  .hero__small .hero__text {
+    padding: 0;
+    text-align: center;
+  }
+  .hero__small.about {
+    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/about/header_small_photo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .faq h2 {
+    margin-bottom: 48px;
   }
 }/*# sourceMappingURL=style.css.map */
