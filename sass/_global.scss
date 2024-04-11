@@ -18,6 +18,9 @@ main {
 .container {
 	max-width: 1110px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 @media screen and (width <= 1110px ) {
