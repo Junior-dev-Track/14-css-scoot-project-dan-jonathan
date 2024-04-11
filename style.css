@@ -254,17 +254,15 @@ header .header_desktop {
   width: 100%;
   display: flex;
   align-items: center;
+  gap: 52px;
+}
+header .header_desktop nav ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   
 }
 
-
-
-header .header_desktop nav ul {
-  padding-left: 30px;
-}
-header .header_desktop nav ul li a {
-  display: inline-block;
-  text-decoration: none;
 }
 header .header_mobil {
   display: none;
