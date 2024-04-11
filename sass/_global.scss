@@ -9,9 +9,10 @@ a {
 }
 
 header,
-nav,
-footer {
+footer,
+main {
 	width: 100%;
+	overflow-x: hidden;
 }
 
 .container {
