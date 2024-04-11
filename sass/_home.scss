@@ -120,7 +120,7 @@
 
 .reasons {
 	img {
-		border-radius: 100%;
+		border-radius: 50%;
 	}
 
 	.reasons__article {
@@ -166,8 +166,8 @@
 			&::before {
 				position: absolute;
 				content: '';
-				width: 445px;
-				height: 445px;
+				width: 100%;
+				height: 100%;
 				border-radius: 50%;
 				background-color: $grey-light;
 				right: -508px;
