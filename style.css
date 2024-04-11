@@ -746,12 +746,12 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   padding: 40px;
   color: #495567;
   margin-bottom: 16px;
-  cursor: pointer;
 }
 .faq details:hover {
   background-color: #fff4df;
 }
 .faq summary {
+  cursor: pointer;
   list-style: none;
   display: flex;
   justify-content: space-between;
