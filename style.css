@@ -263,8 +263,7 @@ header .header_desktop {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 52px;
-}
+
 header .header_desktop nav ul {
   display: flex;
   align-items: center;
@@ -677,6 +676,101 @@ section {
     top: 0px;
   }
 }
+
+section.advantages {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 42px;
+}
+section.advantages h2 {
+  grid-column: 1/4;
+}
+section.advantages .advantage.advantage_1 {
+  grid-column: 1/2;
+}
+section.advantages .advantage.advantage_2 {
+  grid-column: 2/3;
+}
+section.advantages .advantage.advantage_3 {
+  grid-column: 3/4;
+}
+section.advantages .advantage {
+  display: flex;
+  height: auto;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+section.advantages .image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+section.advantages .advantage img {
+  border-radius: 50%;
+}
+section.advantages span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: black;
+  background-color: #fcb72b;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(50%);
+}
+
+section.jobs {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 10px;
+}
+section.jobs .job {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f2f5f9;
+  padding: 36px 64px;
+}
+
+/**********************************************/
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  section.advantages {
+    max-width: 457px;
+    display: flex;
+    flex-direction: column;
+  }
+  section.jobs .job {
+    padding: 36px 48px;
+  }
+}
+/**************************************************/
+@media screen and (max-width: 576px) {
+  section.jobs {
+    display: flex;
+    text-align: center;
+  }
+  section.jobs .job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 32px;
+    gap: 20px;
+  }
+  section.jobs .cta {
+    width: 100%;
+=======
 .hero__small {
   padding: 72px 0;
   overflow: hidden;
