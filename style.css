@@ -735,6 +735,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   margin-bottom: 102px;
 }
 .faq .faq__questions {
+  width: 100%;
   display: grid;
   grid-template-columns: 31.5% 1fr;
   gap: 106px;
@@ -745,6 +746,10 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   padding: 40px;
   color: #495567;
   margin-bottom: 16px;
+  cursor: pointer;
+}
+.faq details:hover {
+  background-color: #fff4df;
 }
 .faq summary {
   list-style: none;

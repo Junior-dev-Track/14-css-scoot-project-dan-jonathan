@@ -49,6 +49,7 @@
 	}
 
 	.faq__questions {
+		width: 100%;
 		display: grid;
 		grid-template-columns: 31.5% 1fr;
 		gap: 106px;
@@ -60,6 +61,11 @@
 		padding: 40px;
 		color: $navy-dark;
 		margin-bottom: 16px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $yellow-light;
+		}
 	}
 	summary {
 		list-style: none;
