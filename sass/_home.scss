@@ -1,9 +1,5 @@
 @import './variables';
 
-
-
-
-
 .hero {
 	padding: 152px 0;
 	overflow: hidden;
@@ -48,6 +44,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 40px;
+			align-self: flex-start;
 		}
 
 		.hero__paragraph {
@@ -73,7 +70,8 @@
 	}
 }
 
-.features, .reasons {
+.features,
+.reasons {
 	margin-bottom: 194px;
 }
 
@@ -83,15 +81,14 @@
 	justify-content: space-evenly;
 	align-items: flex-start;
 	gap: 34px;
-	
 
 	&::after {
 		position: absolute;
 		content: '';
 		height: 1px;
-		width: 90%;
+		width: 100%;
 		border: 8px solid $grey-light;
-		left: -240px;
+		right: calc(100% / 3.33);
 		top: 42px;
 		z-index: 0;
 	}
@@ -240,9 +237,10 @@
 		}
 	}
 
-	.features, .reasons {
-	margin-bottom: 140px;
-}
+	.features,
+	.reasons {
+		margin-bottom: 140px;
+	}
 
 	.features {
 		flex-direction: column;
@@ -250,12 +248,12 @@
 		margin: auto;
 
 		&::after {
-			transform: rotate(90deg);
-			left: 0;
-			top: 0;
-			bottom: 0px;
+			left: 42px;
+			top: calc(100% / -4);
+			width: 1px;
+			height: 110%;
+			z-index: -100;
 		}
-
 
 		.features__item {
 			grid-template-columns: 100px 1fr;
@@ -329,13 +327,18 @@
 		}
 	}
 
-	.features, .reasons {
-	margin-bottom: 125px;
-}
+	.features,
+	.reasons {
+		margin-bottom: 125px;
+	}
 
 	.features {
 		flex-direction: column;
 		width: 75%;
+
+		&::after {
+			display: none;
+		}
 
 		.features__item {
 			grid-template-columns: 1fr;
