@@ -258,6 +258,7 @@ footer h2 {
 }
 
 header {
+
   position: relative;
   /********************************************/
 }
@@ -266,6 +267,7 @@ header.scroll__up {
   top: 0px;
   z-index: 9999;
 }
+
 header .header_desktop {
   width: 100%;
   height: 96px;
@@ -278,6 +280,7 @@ header .header_desktop nav ul {
   display: flex;
   align-items: center;
   gap: 15px;
+
 }
 header .header_desktop,
 header .header_mobil {
@@ -288,6 +291,7 @@ header .header_mobil.scroll__up {
   position: fixed;
   top: 0px;
   z-index: 9999;
+
 }
 header .header_mobil {
   display: none;
