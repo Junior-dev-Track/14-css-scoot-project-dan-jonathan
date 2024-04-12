@@ -310,6 +310,10 @@ nav a:hover {
   color: #fcb72b;
 }
 
+.nav_mobil a {
+  color: #f2f5f9;
+}
+
 a.cta {
   font-family: "Space Mono", monospace;
   color: #f2f5f9;
