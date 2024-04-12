@@ -8,6 +8,10 @@
 }
 
 .reasons.about {
+	> *:not(:last-child) {
+		margin-bottom: 120px;
+	}
+
 	.reasons__article {
 		&:nth-child(1) .article__arrow {
 			transform: scaleY(-1);
@@ -88,21 +92,19 @@
 	}
 }
 
-@media screen and (width <=768px) {
-	.faq {
-		h2 {
-			margin-bottom: 72px;
-		}
-
-		h3 {
-			text-align: center;
-		}
-
-		.faq__questions {
-			grid-template-columns: 1fr;
-			gap: 40px;
+@media screen and (768px <= width <=1024px) {
+	.reasons.about {
+		.reasons__article {
+			&:nth-child(1) .article__arrow {
+				transform: scaleY(-1);
+				right: -260px;
+				bottom: 30px;
+			}
 		}
 	}
+}
+
+@media screen and (width <=768px) {
 }
 
 @media screen and (width <=576px) {
