@@ -1,7 +1,7 @@
 @import './variables';
 
 .container {
-        display: block;
+
 
     .mobil {
         display: none;
@@ -16,60 +16,33 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
-            background-color: rgb(38, 41, 38);
         }
         .pin {
             position: absolute;
+            display: flex;
+            width: 189px;
+            height: 80px;
+            justify-content: center;
+            align-items: center;
             background: $yellow;
-            width: 0.7em;
-            height: 0.7em;
-            border-radius: 50%;
-        }
-        .pin::before {
-            content: '';
-            background: $yellow;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            animation: pulse 1.3s ease-in-out infinite;
-        }
-        .pin span {
-            display: inline-block;
-            white-space: nowrap;
-            position: absolute;
-            left: 1.5em;
-            top: 50%;
-            transform: translateY(-50%);
-            background: $yellow;
-            border-radius: 3em;
-            padding: 0.3em 0.6em;
-            font-size: 0.9em;
+            font-size: 24px;
+            color: black;
         }
         .pin.ny {
-            top: 26%;
-            left: 23%;
+            top: 9%;
+            left: 13%;
         }
         .pin.london {
-            top: 17.5%;
-            left: 44.5%;
+            top: 0%;
+            left: 35%;
         }
         .pin.jkt {
-            top: 60%;
-            left: 78%;
+            top: 42%;
+            left: 67%;
         }
         .pin.yoko {
-            top: 29%;
-            left: 86%;
-        }
-        @keyframes pulse {
-            100% {
-                opacity: 0;
-                transform: translate(-50%, -50%) scale(2.5);
-            }
+            top: 12%;
+            left: 77%;
         }
     }
     .reasons {
@@ -77,20 +50,23 @@
         .carte {
             display: grid;
             align-items: center;
-            grid-template-columns: 2fr 3fr 1fr;
+            grid-template-columns: 3fr 4fr 2fr;
+            margin: 2em 0em;
+            gap: 2em;
             
 
             h2 {
                 grid-column: 1/2;
-                padding-right: 24px;
+                
             }
             p {
                 grid-column: 2/3;
-                padding: 36px;
+                
             }
             a {
+                display: flex;
                 grid-column: 3/4;
-                padding-left: 24px;
+                
             }
         }
 
@@ -101,7 +77,35 @@
 /*********************************************/
 @media screen and (max-width: 768px) {
     .container{
-
+        .map{
+            .pin {
+                position: absolute;
+                display: flex;
+                width: 120px;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+                background: $yellow;
+                font-size: 13px;
+                color: black;
+            }
+            .pin.ny {
+                top: 15%;
+                left: 13%;
+            }
+            .pin.london {
+                top: 6%;
+                left: 35%;
+            }
+            .pin.jkt {
+                top: 48%;
+                left: 70%;
+            }
+            .pin.yoko {
+                top: 15%;
+                left: 77%;
+            }
+        }
         .reasons {
             .carte {
                 display: flex;
@@ -127,21 +131,47 @@
             .city {
                 padding: 24px 0px;
                 margin: 16px 0px;
-                background-color: $yellow-light;
+                background-color: $snow;
             }
         }
         .map {
             .pin span {
                 display: none;
             }
+            .pin {
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+            }
+            .pin.ny {
+                top: 23%;
+                left: 22%;
+            }
+            .pin.london {
+                top: 17%;
+                left: 43%;
+            }
+            .pin.jkt {
+                top: 56%;
+                left: 78%;
+            }
+            .pin.yoko {
+                top: 25%;
+                left: 85%;
+            }
         }
-        /*.reasons {
+        .reasons {
             .carte {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: center;
+
+                h2 {
+                    text-align: center;
+                }
          
             }
-        }*/
+        }
     }
 }
