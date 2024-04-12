@@ -54,6 +54,14 @@ h4 {
 
 nav a {
 	color: $grey-dim;
+
+	&:hover {
+		color: $yellow;
+	}
+}
+
+.nav_mobil a {
+	color: $snow;
 }
 
 a.cta {

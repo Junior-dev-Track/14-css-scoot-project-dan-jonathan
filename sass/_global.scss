@@ -15,17 +15,89 @@ main {
 	overflow-x: hidden;
 }
 
+.features,
+.reasons,
+.advantages,
+.faq,
+.jobs {
+	margin-bottom: 130px;
+}
+
 .container {
 	max-width: 1110px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	padding: 0 clamp(2vw, 16px, 4vw);
 }
 
-@media screen and (width <= 1110px ) {
-	.container {
-		padding: 0 clamp(2vw, 16px, 4vw);
+.hero__small {
+	padding: 72px 0;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 132px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
 
+	&::after {
+		position: absolute;
+		content: '';
+		width: 234px;
+		height: 62px;
+		background-repeat: no-repeat;
 	}
 
+	&::after {
+		top: 0;
+		right: 0;
+		background-image: url('../images/decoration/home/rond_header.svg');
+		background-repeat: no-repeat;
+		transform: translate(15%, 100%);
+	}
+
+	.hero__text {
+		    align-self: flex-start;
+	}
+}
+
+@media screen and (width <= 768px) {
+	
+	.hero__small {
+		margin-bottom: 140px;
+		.hero__text {
+			padding-left: 60px;
+		}
+		&.about {
+			background-size: auto;
+			background-position: 36% 50%;
+		}
+	}
+}
+
+@media screen and (width <=576px) {
+	.hero__small {
+		padding: 52px 0;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 72px;
+
+		&::after {
+			display: none;
+		}
+
+		.hero__text {
+			padding: 0;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (width <= 1110px) {
+	.container {
+		padding: 0 clamp(2vw, 16px, 4vw);
+	}
 }
