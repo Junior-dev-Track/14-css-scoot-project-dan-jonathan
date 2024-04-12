@@ -1,34 +1,9 @@
 @import './variables';
 
 .hero__small {
-	padding: 72px 0;
-	overflow: hidden;
-	position: relative;
-	margin-bottom: 132px;
-
-	&::after {
-		position: absolute;
-		content: '';
-		width: 234px;
-		height: 62px;
-		background-repeat: no-repeat;
-	}
-
-	&::after {
-		top: 0;
-		right: 0;
-		background-image: url('../images/decoration/home/rond_header.svg');
-		background-repeat: no-repeat;
-		transform: translate(15%, 100%);
-	}
-
 	&.about {
 		background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
 			url('../images/about/header_photo.png');
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
 	}
 }
 
@@ -61,17 +36,31 @@
 		padding: 40px;
 		color: $navy-dark;
 		margin-bottom: 16px;
-		
+		transition: min-height 5s ease;
+
 		&:hover {
 			background-color: $yellow-light;
 		}
 	}
+
+	details[open] summary ~ * {
+		animation: show-text 0.5s ease-in-out;
+	}
+
+	@keyframes show-text {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
 	summary {
 		cursor: pointer;
 		list-style: none;
 		display: flex;
 		justify-content: space-between;
-		transition: height 5s ease;
 	}
 	summary::-webkit-details-marker {
 		display: none;
@@ -100,17 +89,6 @@
 }
 
 @media screen and (width <=768px) {
-	.hero__small {
-		margin-bottom: 140px;
-		.hero__text {
-			padding-left: 60px;
-		}
-		&.about {
-			background-size: auto;
-			background-position: 36% 50%;
-		}
-	}
-
 	.faq {
 		h2 {
 			margin-bottom: 72px;
@@ -129,25 +107,9 @@
 
 @media screen and (width <=576px) {
 	.hero__small {
-		padding: 52px 0;
-		overflow: hidden;
-		position: relative;
-		margin-bottom: 72px;
-
-		&::after {
-			display: none;
-		}
-
-		.hero__text {
-			padding: 0;
-			text-align: center;
-		}
-
 		&.about {
 			background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
 				url('../images/about/header_small_photo.png');
-			background-size: cover;
-			background-repeat: no-repeat;
 		}
 	}
 
