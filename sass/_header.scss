@@ -1,12 +1,7 @@
 @import './variables';
 
 header {
-	position: relative;
-	&.scroll__up {
-		position: fixed;
-		top: 0px;
-		z-index: 9999;
-	}
+
 
 	.header_desktop {
 		width: 100%;
