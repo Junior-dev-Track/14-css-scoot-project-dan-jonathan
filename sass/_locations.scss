@@ -1,0 +1,147 @@
+@import './variables';
+
+.container {
+        display: block;
+
+    .mobil {
+        display: none;
+    }
+
+    .map {
+    
+            position: relative;
+             display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: rgb(38, 41, 38);
+        }
+        .pin {
+            position: absolute;
+            background: $yellow;
+            width: 0.7em;
+            height: 0.7em;
+            border-radius: 50%;
+        }
+        .pin::before {
+            content: '';
+            background: $yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation: pulse 1.3s ease-in-out infinite;
+        }
+        .pin span {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            left: 1.5em;
+            top: 50%;
+            transform: translateY(-50%);
+            background: $yellow;
+            border-radius: 3em;
+            padding: 0.3em 0.6em;
+            font-size: 0.9em;
+        }
+        .pin.ny {
+            top: 26%;
+            left: 23%;
+        }
+        .pin.london {
+            top: 17.5%;
+            left: 44.5%;
+        }
+        .pin.jkt {
+            top: 60%;
+            left: 78%;
+        }
+        .pin.yoko {
+            top: 29%;
+            left: 86%;
+        }
+        @keyframes pulse {
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(2.5);
+            }
+        }
+    }
+    .reasons {
+
+        .carte {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 2fr 3fr 1fr;
+            
+
+            h2 {
+                grid-column: 1/2;
+                padding-right: 24px;
+            }
+            p {
+                grid-column: 2/3;
+                padding: 36px;
+            }
+            a {
+                grid-column: 3/4;
+                padding-left: 24px;
+            }
+        }
+
+
+    }
+}
+
+/*********************************************/
+@media screen and (max-width: 768px) {
+    .container{
+
+        .reasons {
+            .carte {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            
+            }
+        }
+    }
+}
+
+/**********************************************/
+@media screen and (max-width: 576px) {
+
+     .container{
+        .mobil.cities {
+            text-align: center;
+            display: block;
+            width: 100%;
+            
+            
+
+            .city {
+                padding: 24px 0px;
+                margin: 16px 0px;
+                background-color: $yellow-light;
+            }
+        }
+        .map {
+            .pin span {
+                display: none;
+            }
+        }
+        /*.reasons {
+            .carte {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+         
+            }
+        }*/
+    }
+}
