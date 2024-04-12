@@ -1,39 +1,48 @@
 @import './variables';
 
 header {
+	.container {
 
-
-	.header_desktop {
-		width: 100%;
-		height: 96px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 52px;
-
-		nav ul {
-			display: flex;
+		.header_desktop {
+			width: 100%;
+			height: 96px;
+			display: grid;
+			grid-template-columns: 1fr 5fr 2fr;
+			justify-content: space-between;
 			align-items: center;
-			gap: 15px;
+			gap: 52px;
+
+			.scoot {
+				grid-column: 1/2;
+			}
+
+			nav ul {
+				grid-column: 2/3;
+				display: flex;
+				align-items: flex-start;
+				gap: 15px;
+			}
+			.cta {
+				grid-column: 3/4;
+				display: flex;
+				justify-self: flex-end;
+			}
 		}
-	}
-
-	.header_desktop,
-	.header_mobil {
-		position: relative;
-
-		&.scroll__up {
-			position: fixed;
-			top: 0px;
-			z-index: 9999;
+		.header_desktop,
+		.header_mobil {
+			position: relative;
+			&.scroll__up {
+				position: fixed;
+				top: 0px;
+				z-index: 9999;
+			}
 		}
-	}
-
-	.header_mobil {
-		display: none;
-	}
-	.nav_mobil {
-		display: none;
+		.header_mobil {
+			display: none;
+		}
+		.nav_mobil {
+			display: none;
+		}
 	}
 
 	/********************************************/
@@ -55,14 +64,56 @@ header {
 				display: grid;
 				place-items: center;
 				grid-template-columns: 1fr 3fr 1fr;
+
+				.croix-burger {
+					display: none;
+
+					&.croix-burger-active {
+						display: block;
+					}
+				}
+				.menu_burger {
+					display: none;
+					&.menu-burger-active {
+						display: block;
+					}
+
+				}
 			}
 
+
 			.nav_mobil.active {
-				width: 50%;
-				height: 200px;
-				display: inline-block;
+				width: 256px;
+				height: calc(100vh - 96px);
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
 				text-decoration: none;
 				background-color: grey;
+				margin-left: -16px;
+				z-index: 1;
+
+				ul {
+
+					display: flex;
+					flex-direction: column;
+					margin-top: 60px;
+					z-index: 1;
+				}
+
+				ul li {
+					color: white;
+					padding-left: 40px;
+					margin-bottom: 32px;
+					
+				}
+
+				.cta {
+					display: flex;
+					align-self: center;
+					margin-bottom: 16px;
+				}
 			}
 		}
 	}

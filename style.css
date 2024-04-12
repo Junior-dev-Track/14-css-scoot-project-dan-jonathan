@@ -182,7 +182,6 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
   padding: 0 clamp(2vw, 16px, 4vw);
 }
 
@@ -207,7 +206,6 @@ main {
   background-image: url("../images/decoration/home/rond_header.svg");
   background-repeat: no-repeat;
   transform: translate(15%, 100%);
-
 }
 
 @media screen and (width <= 768px) {
@@ -315,33 +313,43 @@ footer h2 {
 header {
   /********************************************/
 }
-header .header_desktop {
+header .container .header_desktop {
   width: 100%;
   height: 96px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  justify-content: space-between;
   align-items: center;
   gap: 52px;
 }
-header .header_desktop nav ul {
+header .container .header_desktop .scoot {
+  grid-column: 1/2;
+}
+header .container .header_desktop nav ul {
+  grid-column: 2/3;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
 }
-header .header_desktop,
-header .header_mobil {
+header .container .header_desktop .cta {
+  grid-column: 3/4;
+  display: flex;
+  justify-self: flex-end;
+}
+header .container .header_desktop,
+header .container .header_mobil {
   position: relative;
 }
-header .header_desktop.scroll__up,
-header .header_mobil.scroll__up {
+header .container .header_desktop.scroll__up,
+header .container .header_mobil.scroll__up {
   position: fixed;
   top: 0px;
   z-index: 9999;
 }
-header .header_mobil {
+header .container .header_mobil {
   display: none;
 }
-header .nav_mobil {
+header .container .nav_mobil {
   display: none;
 }
 @media screen and (max-width: 576px) {
@@ -362,12 +370,45 @@ header .nav_mobil {
     place-items: center;
     grid-template-columns: 1fr 3fr 1fr;
   }
+  header .container .header_mobil .croix-burger {
+    display: none;
+  }
+  header .container .header_mobil .croix-burger.croix-burger-active {
+    display: block;
+  }
+  header .container .header_mobil .menu_burger {
+    display: none;
+  }
+  header .container .header_mobil .menu_burger.menu-burger-active {
+    display: block;
+  }
   header .container .nav_mobil.active {
-    width: 50%;
-    height: 200px;
-    display: inline-block;
+    width: 256px;
+    height: calc(100vh - 96px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-decoration: none;
     background-color: grey;
+    margin-left: -16px;
+    z-index: 1;
+  }
+  header .container .nav_mobil.active ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    z-index: 1;
+  }
+  header .container .nav_mobil.active ul li {
+    color: white;
+    padding-left: 40px;
+    margin-bottom: 32px;
+  }
+  header .container .nav_mobil.active .cta {
+    display: flex;
+    align-self: center;
+    margin-bottom: 16px;
   }
 }
 
@@ -954,13 +995,11 @@ section.jobs .job {
     width: 100%;
   }
 }
-
 @media screen and (width <= 576px) {
   .hero__small.careers {
     background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/careers/career_small_header.png");
   }
 }
-
 .container .mobil {
   display: none;
 }
