@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
 	if (document.body.getBoundingClientRect().top >= -80) {
 		headerDesktop.classList.remove('scroll__up');
 		headerMobile.classList.remove('scroll__up');
-	} else if (document.body.getBoundingClientRect().top > scrollPos) {
+	} else if (document.body.getBoundingClientRect().top >= scrollPos) {
 		console.log('scrollup');
 		headerDesktop.classList.add('scroll__up');
 		headerMobile.classList.add('scroll__up');
