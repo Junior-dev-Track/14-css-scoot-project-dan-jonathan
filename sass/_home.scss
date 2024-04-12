@@ -22,21 +22,16 @@
 		&::after {
 			position: absolute;
 			content: '';
-			width: 452px;
-			height: 150px;
+
 			background-repeat: no-repeat;
-		}
-		&::before {
-			top: 55%;
-			left: 53%;
-			background-image: url('../images/decoration/home/fleche_header.svg');
 		}
 
 		&::after {
+			width: 234px;
+			height: 62px;
 			top: 77%;
 			left: 99%;
 			background-image: url('../images/decoration/home/rond_header.svg');
-			background-repeat: no-repeat;
 		}
 
 		.hero__text {
@@ -54,6 +49,15 @@
 
 			p {
 				margin-bottom: 42px;
+			}
+			&::after {
+				position: absolute;
+				content: '';
+				width: 452px;
+				height: 150px;
+				top: 37px;
+				left: 110%;
+				background-image: url('../images/decoration/home/fleche_header.svg');
 			}
 
 			&::before {
@@ -191,6 +195,16 @@
 	}
 }
 
+@media screen and (768px < width <= 1024px) {
+	.hero {
+		.hero__content {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
 @media screen and (width <= 768px) {
 	.hero {
 		padding: 137px 0 206px 0;
@@ -201,11 +215,6 @@
 		}
 
 		.hero__content {
-			&::before {
-				top: 108%;
-				left: -16%;
-			}
-
 			&::after {
 				top: 120%;
 				left: 60%;
@@ -229,7 +238,10 @@
 				p {
 					margin-bottom: 42px;
 				}
-
+				&::after {
+					top: 100%;
+					left: calc(-100vw/3);
+				}
 				&::before {
 					display: none;
 				}
@@ -312,17 +324,19 @@
 		}
 
 		.hero__content {
-			&::before {
-				top: 100%;
-				left: -100%;
-			}
-
 			&::after {
 				display: none;
 			}
 
 			.hero__text {
 				width: 80%;
+			}
+
+			.hero__paragraph {
+				&::after {
+					top: 100%;
+					left: -125%;
+				}
 			}
 		}
 	}

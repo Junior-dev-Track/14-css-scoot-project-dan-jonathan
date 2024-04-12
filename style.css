@@ -483,20 +483,14 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 .hero .hero__content::before, .hero .hero__content::after {
   position: absolute;
   content: "";
-  width: 452px;
-  height: 150px;
   background-repeat: no-repeat;
 }
-.hero .hero__content::before {
-  top: 55%;
-  left: 53%;
-  background-image: url("../images/decoration/home/fleche_header.svg");
-}
 .hero .hero__content::after {
+  width: 234px;
+  height: 62px;
   top: 77%;
   left: 99%;
   background-image: url("../images/decoration/home/rond_header.svg");
-  background-repeat: no-repeat;
 }
 .hero .hero__content .hero__text {
   width: 50%;
@@ -512,6 +506,15 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 }
 .hero .hero__content .hero__paragraph p {
   margin-bottom: 42px;
+}
+.hero .hero__content .hero__paragraph::after {
+  position: absolute;
+  content: "";
+  width: 452px;
+  height: 150px;
+  top: 37px;
+  left: 110%;
+  background-image: url("../images/decoration/home/fleche_header.svg");
 }
 .hero .hero__content .hero__paragraph::before {
   position: absolute;
@@ -624,6 +627,11 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   right: 0;
 }
 
+@media screen and (768px < width <= 1024px) {
+  .hero .hero__content::after {
+    display: none;
+  }
+}
 @media screen and (width <= 768px) {
   .hero {
     padding: 137px 0 206px 0;
@@ -632,10 +640,6 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   }
   .hero.home {
     background-position: center;
-  }
-  .hero .hero__content::before {
-    top: 108%;
-    left: -16%;
   }
   .hero .hero__content::after {
     top: 120%;
@@ -656,6 +660,10 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   }
   .hero .hero__content .hero__paragraph p {
     margin-bottom: 42px;
+  }
+  .hero .hero__content .hero__paragraph::after {
+    top: 100%;
+    left: -33.3333333333vw;
   }
   .hero .hero__content .hero__paragraph::before {
     display: none;
@@ -718,15 +726,15 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   .hero.home {
     background-position: 80%;
   }
-  .hero .hero__content::before {
-    top: 100%;
-    left: -100%;
-  }
   .hero .hero__content::after {
     display: none;
   }
   .hero .hero__content .hero__text {
     width: 80%;
+  }
+  .hero .hero__content .hero__paragraph::after {
+    top: 100%;
+    left: -125%;
   }
   .features,
   .reasons {
