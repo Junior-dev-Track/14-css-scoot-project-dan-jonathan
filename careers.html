@@ -10,43 +10,52 @@
 			crossorigin="anonymous"
 			defer
 		></script>
+		<script src="./app.js"></script>
     <title>Scoot - by Dan & Jonathan - Home</title>
 </head>
 <body>
 
-	<header>
-		<div class="container">
-			
-			<div class="header_desktop">
-				<div class="scoot"><img src="./images/home/scoot.svg" alt="logo scoot">
-				</div>
-				<nav>
-					<ul>
-						<li><a href="./home.html">Careers</a></li>
-						<li><a href="./about.html">About</a></li>
-						<li><a href="./locations.html">Location</a></li>
-					</ul>
-				</nav>
-				<a href="" class="cta">Get Scootin</a>
-			</div>
-			<div class="header_mobil">
-				
-				<img src="./images/decoration/burger_menu.svg" alt="button-menu-burger" class="menu_burger">
-				<img src="./images/home/scoot.svg" alt="logo scoot" class="scoot_svg">
-			</div>
-			<div class="nav_mobil active">
-				<nav>
-					<ul>
-						<li><a href="./home.html">Careers</a></li>
-						<li><a href="./about.html">About</a></li>
-						<li><a href="./locations.html">Location</a></li>
-					</ul> 
-				</nav>
-				<a href="" class="cta">Get Scootin</a>
-			</div>
-			   
-		</div>
-	</header>
+     <header>
+        <div class="container">
+            <div class="header_desktop" id="header__desktop">
+                <div class="scoot"><img src="./images/home/scoot.svg" alt="logo scoot">
+                </div>
+                <nav>
+                    <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./locations.html">Location</a></li>
+                    <li><a href="./careers.html">Careers</a></li>
+                    </ul>
+                </nav>
+                <a href="" class="cta">Get Scootin</a>
+            </div>
+
+            <div class="header_mobil" id="header__mobile">
+                
+                <img src="./images/decoration/burger_menu.svg" alt="button-menu-burger" class="menu_burger" id="burger__open">
+                <img src="./images/home/scoot.svg" alt="logo scoot" class="scoot_svg">
+            </div>
+            <div class="nav_mobil active" id="nav__mobile">
+                <nav>
+                    <ul>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./locations.html">Location</a></li>
+                        <li><a href="./careers.html">Careers</a></li>
+                    </ul> 
+                </nav>
+                <a href="" class="cta">Get Scootin</a>
+            </div>
+               
+        </div>
+    </header>
+
+	<section class="hero__small careers">
+        <div class="hero__content container">
+            <div class="hero__text">
+                <h1>Careers</h1>
+            </div>
+        </div>
+    </section>
 	<div class="container">
 			<section class="advantages">
 				<h2>Why you join us?</h2>
