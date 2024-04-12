@@ -18,31 +18,43 @@
             object-fit: contain;
         }
         .pin {
-            position: absolute;
+            
             display: flex;
             width: 189px;
             height: 80px;
             justify-content: center;
             align-items: center;
-            background: $yellow;
             font-size: 24px;
-            color: black;
+            background: $yellow;
+            position: absolute;
+            
         }
+        .pin::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 45px;
+            width: 0;
+            height: 0;
+            border-left: 13px solid transparent;
+            border-top: 8px solid $yellow;
+            border-right: 13px solid transparent;
+          }
         .pin.ny {
-            top: 9%;
-            left: 13%;
+            top: 12%;
+            left: 17%;
         }
         .pin.london {
-            top: 0%;
-            left: 35%;
+            top: 3%;
+            left: 39.5%;
         }
         .pin.jkt {
-            top: 42%;
-            left: 67%;
+            top: 45%;
+            left: 73%;
         }
         .pin.yoko {
-            top: 12%;
-            left: 77%;
+            top: 14%;
+            left: 81%;
         }
     }
     .reasons {
@@ -79,26 +91,37 @@
     .container{
         .map{
             .pin {
-                position: absolute;
                 display: flex;
                 width: 120px;
                 height: 40px;
+                font-size: 13px;
                 justify-content: center;
                 align-items: center;
                 background: $yellow;
-                font-size: 13px;
-                color: black;
+                position: absolute;
             }
+            .pin::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 45px;
+                width: 0;
+                height: 0;
+                border-left: 13px solid transparent;
+                border-top: 8px solid $yellow;
+                border-right: 13px solid transparent;
+              }
+
             .pin.ny {
                 top: 15%;
                 left: 13%;
             }
             .pin.london {
-                top: 6%;
-                left: 35%;
+                top: 4%;
+                left: 36%;
             }
             .pin.jkt {
-                top: 48%;
+                top: 46%;
                 left: 70%;
             }
             .pin.yoko {
@@ -142,6 +165,9 @@
                 height: 10px;
                 width: 10px;
                 border-radius: 50%;
+            }
+            .pin::after{
+                display: none;
             }
             .pin.ny {
                 top: 23%;
