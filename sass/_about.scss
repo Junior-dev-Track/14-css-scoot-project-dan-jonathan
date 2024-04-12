@@ -4,6 +4,7 @@
 	padding: 72px 0;
 	overflow: hidden;
 	position: relative;
+	margin-bottom: 132px;
 
 	&::after {
 		position: absolute;
@@ -48,6 +49,7 @@
 	}
 
 	.faq__questions {
+		width: 100%;
 		display: grid;
 		grid-template-columns: 31.5% 1fr;
 		gap: 106px;
@@ -59,8 +61,13 @@
 		padding: 40px;
 		color: $navy-dark;
 		margin-bottom: 16px;
+		
+		&:hover {
+			background-color: $yellow-light;
+		}
 	}
 	summary {
+		cursor: pointer;
 		list-style: none;
 		display: flex;
 		justify-content: space-between;
@@ -94,6 +101,7 @@
 
 @media screen and (width <=768px) {
 	.hero__small {
+		margin-bottom: 140px;
 		.hero__text {
 			padding-left: 60px;
 		}
@@ -124,6 +132,7 @@
 		padding: 52px 0;
 		overflow: hidden;
 		position: relative;
+		margin-bottom: 72px;
 
 		&::after {
 			display: none;
