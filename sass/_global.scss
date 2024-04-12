@@ -15,25 +15,33 @@ main {
 	overflow-x: hidden;
 }
 
+.features,
+.reasons,
+.advantages,
+.faq,
+.jobs {
+	margin-bottom: 130px;
+}
+
 .container {
 	max-width: 1110px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding: 0 clamp(2vw, 16px, 4vw);
 }
-
 
 .hero__small {
 	padding: 72px 0;
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 132px;
-			-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
 
 	&::after {
 		position: absolute;
@@ -51,11 +59,13 @@ main {
 		transform: translate(15%, 100%);
 	}
 
-
+	.hero__text {
+		align-self: flex-start;
+	}
 }
 
 @media screen and (width <= 768px) {
-		.hero__small {
+	.hero__small {
 		margin-bottom: 140px;
 		.hero__text {
 			padding-left: 60px;
@@ -82,7 +92,6 @@ main {
 			padding: 0;
 			text-align: center;
 		}
-
 	}
 }
 
