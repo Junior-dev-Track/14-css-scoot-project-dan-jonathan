@@ -1,203 +1,200 @@
 @import './variables';
 
+.hero__small {
+	&.locations {
+		background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
+			url('../images/location/locations_header.png');
+	}
+}
+
 .container {
+	.mobil {
+		display: none;
+	}
 
+	.map {
+		position: relative;
+		display: block;
 
-    .mobil {
-        display: none;
-    }
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+		.pin {
+			display: flex;
+			width: 189px;
+			height: 80px;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			background: $yellow;
+			position: absolute;
+		}
+		.pin::after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 45px;
+			width: 0;
+			height: 0;
+			border-left: 13px solid transparent;
+			border-top: 8px solid $yellow;
+			border-right: 13px solid transparent;
+		}
+		.pin.ny {
+			top: 12%;
+			left: 17%;
+		}
+		.pin.london {
+			top: 3%;
+			left: 39.5%;
+		}
+		.pin.jkt {
+			top: 45%;
+			left: 73%;
+		}
+		.pin.yoko {
+			top: 14%;
+			left: 81%;
+		}
+	}
+	.reasons {
+		.carte {
+			display: grid;
+			align-items: center;
+			grid-template-columns: 3fr 4fr 2fr;
+			margin: 2em 0em;
+			gap: 2em;
 
-    .map {
-    
-            position: relative;
-             display: block;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-        .pin {
-            
-            display: flex;
-            width: 189px;
-            height: 80px;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            background: $yellow;
-            position: absolute;
-            
-        }
-        .pin::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 45px;
-            width: 0;
-            height: 0;
-            border-left: 13px solid transparent;
-            border-top: 8px solid $yellow;
-            border-right: 13px solid transparent;
-          }
-        .pin.ny {
-            top: 12%;
-            left: 17%;
-        }
-        .pin.london {
-            top: 3%;
-            left: 39.5%;
-        }
-        .pin.jkt {
-            top: 45%;
-            left: 73%;
-        }
-        .pin.yoko {
-            top: 14%;
-            left: 81%;
-        }
-    }
-    .reasons {
-
-        .carte {
-            display: grid;
-            align-items: center;
-            grid-template-columns: 3fr 4fr 2fr;
-            margin: 2em 0em;
-            gap: 2em;
-            
-
-            h2 {
-                grid-column: 1/2;
-                
-            }
-            p {
-                grid-column: 2/3;
-                
-            }
-            a {
-                display: flex;
-                grid-column: 3/4;
-                
-            }
-        }
-
-
-    }
+			h2 {
+				grid-column: 1/2;
+			}
+			p {
+				grid-column: 2/3;
+			}
+			a {
+				display: flex;
+				grid-column: 3/4;
+			}
+		}
+	}
 }
 
 /*********************************************/
 @media screen and (max-width: 768px) {
-    .container{
-        .map{
-            .pin {
-                display: flex;
-                width: 120px;
-                height: 40px;
-                font-size: 13px;
-                justify-content: center;
-                align-items: center;
-                background: $yellow;
-                position: absolute;
-            }
-            .pin::after {
-                content: "";
-                position: absolute;
-                top: 100%;
-                left: 45px;
-                width: 0;
-                height: 0;
-                border-left: 13px solid transparent;
-                border-top: 8px solid $yellow;
-                border-right: 13px solid transparent;
-              }
+	.container {
+		.map {
+			.pin {
+				display: flex;
+				width: 120px;
+				height: 40px;
+				font-size: 13px;
+				justify-content: center;
+				align-items: center;
+				background: $yellow;
+				position: absolute;
+			}
+			.pin::after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				left: 45px;
+				width: 0;
+				height: 0;
+				border-left: 13px solid transparent;
+				border-top: 8px solid $yellow;
+				border-right: 13px solid transparent;
+			}
 
-            .pin.ny {
-                top: 15%;
-                left: 13%;
-            }
-            .pin.london {
-                top: 4%;
-                left: 36%;
-            }
-            .pin.jkt {
-                top: 46%;
-                left: 70%;
-            }
-            .pin.yoko {
-                top: 15%;
-                left: 77%;
-            }
-        }
-        .reasons {
-            .carte {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            
-            }
-        }
-    }
+			.pin.ny {
+				top: 15%;
+				left: 13%;
+			}
+			.pin.london {
+				top: 4%;
+				left: 36%;
+			}
+			.pin.jkt {
+				top: 46%;
+				left: 70%;
+			}
+			.pin.yoko {
+				top: 15%;
+				left: 77%;
+			}
+		}
+		.reasons {
+			.carte {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
 }
 
 /**********************************************/
 @media screen and (max-width: 576px) {
+	.hero__small {
+		&.locations {
+			background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
+				url('../images/location/locations_small_header.png');
+		}
+	}
 
-     .container{
-        .mobil.cities {
-            text-align: center;
-            display: block;
-            width: 100%;
-            
-            
+	.container {
+		.mobil.cities {
+			text-align: center;
+			display: block;
+			width: 100%;
 
-            .city {
-                padding: 24px 0px;
-                margin: 16px 0px;
-                background-color: $snow;
-            }
-        }
-        .map {
-            .pin span {
-                display: none;
-            }
-            .pin {
-                height: 10px;
-                width: 10px;
-                border-radius: 50%;
-            }
-            .pin::after{
-                display: none;
-            }
-            .pin.ny {
-                top: 23%;
-                left: 22%;
-            }
-            .pin.london {
-                top: 17%;
-                left: 43%;
-            }
-            .pin.jkt {
-                top: 56%;
-                left: 78%;
-            }
-            .pin.yoko {
-                top: 25%;
-                left: 85%;
-            }
-        }
-        .reasons {
-            .carte {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+			.city {
+				padding: 24px 0px;
+				margin: 16px 0px;
+				background-color: $snow;
+			}
+		}
+		.map {
+			.pin span {
+				display: none;
+			}
+			.pin {
+				height: 10px;
+				width: 10px;
+				border-radius: 50%;
+			}
+			.pin::after {
+				display: none;
+			}
+			.pin.ny {
+				top: 23%;
+				left: 22%;
+			}
+			.pin.london {
+				top: 17%;
+				left: 43%;
+			}
+			.pin.jkt {
+				top: 56%;
+				left: 78%;
+			}
+			.pin.yoko {
+				top: 25%;
+				left: 85%;
+			}
+		}
+		.reasons {
+			.carte {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 
-                h2 {
-                    text-align: center;
-                }
-         
-            }
-        }
-    }
+				h2 {
+					text-align: center;
+				}
+			}
+		}
+	}
 }

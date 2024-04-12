@@ -10,24 +10,68 @@
 			crossorigin="anonymous"
 			defer
 		></script>
-    <title>Scoot - by Dan & Jonathan - Home</title>
+		<script src="./app.js" defer></script>
+    <title>Scoot - by Dan & Jonathan - Locations</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            
-            <div class="scoot"><img src="./images/home/scoot.svg" alt="logo scoot"></div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#careers">Careers</a></li>
-                </ul>
-            </nav>
-            <a href="" class="cta">Get Scootin</a>
-        </div>
+		<header id="header">
+			<div class="container">
+				<div class="header_desktop" id="header__desktop">
+					<div class="scoot">
+						<img src="./images/home/scoot.svg" alt="logo scoot" />
+					</div>
+					<nav>
+						<ul>
+							<li><a href="./about.html">About</a></li>
+							<li><a href="./locations.html">Location</a></li>
+							<li><a href="./careers.html">Careers</a></li>
+						</ul>
+					</nav>
+					<a href="" class="cta">Get Scootin</a>
+				</div>
 
-    </header>
+				<div class="header_mobil" id="header__mobile">
+					<div class="header_mobil__burgers">
+						<img
+							src="./images/decoration/burger_menu.svg"
+							alt="button-menu-burger"
+							class="menu_burger-active"
+							id="burger__open"
+						/>
+						<img
+							src="./images/decoration/croix-burger.svg"
+							alt=""
+							class="croix-burger"
+							id="croix-burger"
+						/>
+						<img
+							src="./images/home/scoot.svg"
+							alt="logo scoot"
+							class="scoot_svg"
+						/>
+					</div>
+					<div class="nav_mobil active" id="nav__mobile">
+						<nav>
+							<ul>
+								<li><a href="./about.html">About</a></li>
+								<li><a href="./locations.html">Location</a></li>
+								<li><a href="./careers.html">Careers</a></li>
+							</ul>
+							<a href="" class="cta">Get Scootin</a>
+						</nav>
+
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</header>
+			<section class="hero__small locations">
+        <div class="hero__content container">
+            <div class="hero__text">
+                <h1>Locations</h1>
+            </div>
+        </div>
+    </section>
 	<section>
 		<div class="container">
 			<div class="map">

@@ -60,12 +60,11 @@ main {
 	}
 
 	.hero__text {
-		    align-self: flex-start;
+		align-self: flex-start;
 	}
 }
 
 @media screen and (width <= 768px) {
-	
 	.hero__small {
 		margin-bottom: 140px;
 		.hero__text {

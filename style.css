@@ -975,6 +975,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   justify-content: space-around;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 .jobs .job {
   display: flex;
@@ -1019,6 +1020,10 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
     background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/careers/career_small_header.png");
   }
 }
+.hero__small.locations {
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/location/locations_header.png");
+}
+
 .container .mobil {
   display: none;
 }
@@ -1134,6 +1139,9 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 }
 /**********************************************/
 @media screen and (max-width: 576px) {
+  .hero__small.locations {
+    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/location/locations_small_header.png");
+  }
   .container .mobil.cities {
     text-align: center;
     display: block;
