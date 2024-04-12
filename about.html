@@ -10,28 +10,139 @@
 			crossorigin="anonymous"
 			defer
 		></script>
+		<script src="./app.js" defer></script>
     <title>Scoot - by Dan & Jonathan - Home</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
-            
-            <div class="scoot"><img src="./images/home/scoot.svg" alt="logo scoot"></div>
-            <nav>
-                <ul>
+            <div class="header_desktop" id="header__desktop">
+                <div class="scoot"><img src="./images/home/scoot.svg" alt="logo scoot">
+                </div>
+                <nav>
+                    <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#location">Location</a></li>
                     <li><a href="#careers">Careers</a></li>
-                </ul>
-            </nav>
-            <a href="" class="cta">Get Scootin</a>
+                    </ul>
+                </nav>
+                <a href="" class="cta">Get Scootin</a>
+            </div>
+
+            <div class="header_mobil" id="header__mobile">
+                
+                <img src="./images/decoration/burger_menu.svg" alt="button-menu-burger" class="menu_burger" id="burger__open">
+                <img src="./images/home/scoot.svg" alt="logo scoot" class="scoot_svg">
+            </div>
+            <div class="nav_mobil active" id="nav__mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul> 
+                </nav>
+                <a href="" class="cta">Get Scootin</a>
+            </div>
+               
         </div>
-
     </header>
+	    <section class="hero__small about">
+        <div class="hero__content container">
+            <div class="hero__text">
+                <h1>About</h1>
+            </div>
+        </div>
+    </section>
+	<main>
+		<section class="reasons about container">
+			<article class="reasons__article">
+				<div class="article__content">
+					<h2>
+						Mobility for the <br>digital era
+					</h2>
+					<p>
+						Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.
+					</p>
+					<a href="" class="cta">Learn More</a>
+				</div>
+				<div class="article__image">
+					<img src="./images/about/about_01.png" alt="">
+					<img class="article__arrow" src="./images/decoration/home/fleche_photo_1.svg" alt="">
+				</div>
+				
+			</article>
+			<article class="reasons__article">
+				<div class="article__content">
+					<h2>
+						Better urban <br>living
+					</h2>
+					<p>
+						We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.
+					</p>
+					<a href="" class="cta">Learn More</a>
+				</div>
+				<div class="article__image">
+					<img src="./images/about/about_02.png" alt="">
+					<img class="article__arrow" src="./images/decoration/home/fleche_photo_1.svg" alt="">
+				</div>
+				
+			</article>
 
-
-
-		<footer>
+		</section>
+		<div class="container">
+			<section class="advantages"></section>
+		</div>
+		<section class="faq container">
+			<h2>FAQs</h2>
+			<div class="faq__questions">
+				<h3>How it works</h3>
+				<div class="faq__questions__list">
+					<details class="faq__question">
+						<summary><h4>How do I download the app?</h4></summary>
+						<p>
+						To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.
+						</p>
+					</details>
+					<details class="faq__question">
+						<summary><h4>Can I find a nearby Scoots?</h4></summary>
+						<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, omnis doloribus labore veniam ex vel maiores perspiciatis dolorum voluptas, delectus quo necessitatibus vero ratione quam!
+						</p>
+					</details>
+					<details class="faq__question">
+						<summary><h4>Do I need a license to ride?</h4></summary>
+						<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, odio eum voluptatum dolores animi vitae molestiae sapiente atque error fuga qui aperiam voluptate repudiandae quasi tempora illo? Doloremque, deserunt quam?
+						</p>
+					</details>					
+				</div>
+			</div>
+			<div class="faq__questions">
+				<h3>Safe driving</h3>
+				<div class="faq__questions__list">
+					<details class="faq__question">
+						<summary><h4>Should I wear a helmet?</h4></summary>
+						<p>
+						Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.
+						</p>
+					</details>
+					<details class="faq__question">
+						<summary><h4>How about the rules & regulations?</h4></summary>
+						<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt illo accusamus ut alias? Ipsum cum explicabo deleniti minima impedit porro recusandae, suscipit, iste necessitatibus dolorum, dolores qui harum officiis tempora consectetur! Quos doloremque architecto sapiente.
+						</p>
+					</details>
+					<details class="faq__question">
+						<summary><h4>What if I damage my Scoot?</h4></summary>
+						<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sint dolorem molestias obcaecati dolore adipisci corrupti. Impedit assumenda magnam recusandae?
+						</p>
+					</details>					
+				</div>
+			</div>
+		</section>
+	<footer>
 			<div class="signup">
 				<div class="signup__content container">
 					<h2>Sign up and Scoot off today</h2>
@@ -65,8 +176,8 @@
 					</div>
 				</div>
 			</nav>
-		</footer>
-    
+	</footer>
+    </main>
 </body>
 </html>
 </html>
