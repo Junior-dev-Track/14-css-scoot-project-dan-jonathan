@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Scoot - by Dan & Jonathan - Home">
-    <link rel="stylesheet" href="style.css">
-			<script
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Scoot - by Dan & Jonathan - Home" />
+		<link rel="stylesheet" href="style.css" />
+		<script
 			src="https://kit.fontawesome.com/6cf87d1226.js"
 			crossorigin="anonymous"
 			defer
 		></script>
 		<script src="./app.js" defer></script>
-    <title>Scoot - by Dan & Jonathan - Locations</title>
-</head>
-<body>
+		<title>Scoot - by Dan & Jonathan - Locations</title>
+	</head>
+	<body>
 		<header id="header">
 			<div class="container">
 				<div class="header_desktop" id="header__desktop">
 					<div class="scoot">
-						<img src="./images/home/scoot.svg" alt="logo scoot" />
+						<a href="./index.html"
+							><img
+								src="./images/home/scoot.svg"
+								alt="logo scoot"
+								class="scoot_svg"
+						/></a>
 					</div>
 					<nav>
 						<ul>
@@ -35,22 +40,23 @@
 						<img
 							src="./images/decoration/burger_menu.svg"
 							alt="button-menu-burger"
-							class="menu_burger-active"
+							class="burger__open--active"
 							id="burger__open"
 						/>
 						<img
 							src="./images/decoration/croix-burger.svg"
 							alt=""
-							class="croix-burger"
-							id="croix-burger"
+							class="burger__close"
+							id="burger__close"
 						/>
-						<img
-							src="./images/home/scoot.svg"
-							alt="logo scoot"
-							class="scoot_svg"
-						/>
+						<a href="./index.html"
+							><img
+								src="./images/home/scoot.svg"
+								alt="logo scoot"
+								class="scoot_svg"
+						/></a>
 					</div>
-					<div class="nav_mobil active" id="nav__mobile">
+					<div class="nav_mobil" id="nav__mobile">
 						<nav>
 							<ul>
 								<li><a href="./about.html">About</a></li>
@@ -60,53 +66,61 @@
 							<a href="" class="cta">Get Scootin</a>
 						</nav>
 
-						<div></div>
+						<div id="nav_mobile_overlay"></div>
 					</div>
 				</div>
 			</div>
 		</header>
+
+		<main>
 			<section class="hero__small locations">
-        <div class="hero__content container">
-            <div class="hero__text">
-                <h1>Locations</h1>
-            </div>
-        </div>
-    </section>
-	<section>
-		<div class="container">
-			<div class="map">
-				<img src="./images/location/map.svg" alt="">
-				<div class="pin ny">
-					<span>New-york</span>
+				<div class="hero__content container">
+					<div class="hero__text">
+						<h1>Locations</h1>
+					</div>
 				</div>
-				<div class="pin london">
-					<span>London</span>
-				</div>
-				<div class="pin jkt">
-					<span>Jakarta</span>
-				</div>
-				<div class="pin yoko">
-					<span>Yokohama</span>
-				</div>
+			</section>
+			<div class="container">
+				<section>
+					<div class="map">
+						<img src="./images/location/map.svg" alt="" />
+						<div class="pin ny">
+							<span>New-york</span>
+						</div>
+						<div class="pin london">
+							<span>London</span>
+						</div>
+						<div class="pin jkt">
+							<span>Jakarta</span>
+						</div>
+						<div class="pin yoko">
+							<span>Yokohama</span>
+						</div>
+					</div>
+					<div class="mobil cities">
+						<div class="city">New-york</div>
+						<div class="city">London</div>
+						<div class="city">Jakarta</div>
+						<div class="city">Yokohama</div>
+					</div>
+				</section>
+				<section>
+					<div class="reasons">
+						<div class="carte">
+							<h2>Your city not listed?</h2>
+							<p>
+								If you’d like to see Scoot in your hometown, be sure to let us
+								know. We track requests and plan launches based on demand. Feel
+								free to message us by clicking the link or messaging us on
+								social.
+							</p>
+							<a href="" class="cta">Message Us</a>
+						</div>
+					</div>
+				</section>
 			</div>
-			<div class="mobil cities">
-				<div class="city">New-york</div>
-				<div class="city">London</div>
-				<div class="city">Jakarta</div>
-				<div class="city">Yokohama</div>
-			</div>
-			<div class="reasons">
-				<div class="carte">
-					<h2>Your city not listed?</h2>
-					<p>If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.</p>
-					<a href="" class="cta">Message Us</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-
+		</main>
+		
 		<footer>
 			<div class="signup">
 				<div class="signup__content container">
@@ -142,7 +156,5 @@
 				</div>
 			</nav>
 		</footer>
-    
-</body>
-</html>
+	</body>
 </html>

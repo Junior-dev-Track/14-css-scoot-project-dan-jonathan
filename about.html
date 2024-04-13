@@ -14,65 +14,72 @@
     <title>Scoot - by Dan & Jonathan - About</title>
 </head>
 <body>
-		<header id="header">
-			<div class="container">
-				<div class="header_desktop" id="header__desktop">
-					<div class="scoot">
-						<img src="./images/home/scoot.svg" alt="logo scoot" />
-					</div>
+	<header id="header">
+		<div class="container">
+			<div class="header_desktop" id="header__desktop">
+				<div class="scoot">
+					<a href="./index.html"
+						><img
+							src="./images/home/scoot.svg"
+							alt="logo scoot"
+							class="scoot_svg"
+					/></a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="./about.html">About</a></li>
+						<li><a href="./locations.html">Location</a></li>
+						<li><a href="./careers.html">Careers</a></li>
+					</ul>
+				</nav>
+				<a href="" class="cta">Get Scootin</a>
+			</div>
+
+			<div class="header_mobil" id="header__mobile">
+				<div class="header_mobil__burgers">
+					<img
+						src="./images/decoration/burger_menu.svg"
+						alt="button-menu-burger"
+						class="burger__open--active"
+						id="burger__open"
+					/>
+					<img
+						src="./images/decoration/croix-burger.svg"
+						alt=""
+						class="burger__close"
+						id="burger__close"
+					/>
+					<a href="./index.html"
+						><img
+							src="./images/home/scoot.svg"
+							alt="logo scoot"
+							class="scoot_svg"
+					/></a>
+				</div>
+				<div class="nav_mobil" id="nav__mobile">
 					<nav>
 						<ul>
 							<li><a href="./about.html">About</a></li>
 							<li><a href="./locations.html">Location</a></li>
 							<li><a href="./careers.html">Careers</a></li>
 						</ul>
+						<a href="" class="cta">Get Scootin</a>
 					</nav>
-					<a href="" class="cta">Get Scootin</a>
-				</div>
 
-				<div class="header_mobil" id="header__mobile">
-					<div class="header_mobil__burgers">
-						<img
-							src="./images/decoration/burger_menu.svg"
-							alt="button-menu-burger"
-							class="menu_burger-active"
-							id="burger__open"
-						/>
-						<img
-							src="./images/decoration/croix-burger.svg"
-							alt=""
-							class="croix-burger"
-							id="croix-burger"
-						/>
-						<img
-							src="./images/home/scoot.svg"
-							alt="logo scoot"
-							class="scoot_svg"
-						/>
-					</div>
-					<div class="nav_mobil active" id="nav__mobile">
-						<nav>
-							<ul>
-								<li><a href="./about.html">About</a></li>
-								<li><a href="./locations.html">Location</a></li>
-								<li><a href="./careers.html">Careers</a></li>
-							</ul>
-							<a href="" class="cta">Get Scootin</a>
-						</nav>
-
-						<div></div>
-					</div>
+					<div id="nav_mobile_overlay"></div>
 				</div>
 			</div>
-		</header>
-	    <section class="hero__small about">
-        <div class="hero__content container">
-            <div class="hero__text">
-                <h1>About</h1>
-            </div>
-        </div>
-    </section>
+		</div>
+	</header>
+
 	<main>
+		<section class="hero__small about">
+			<div class="hero__content container">
+				<div class="hero__text">
+					<h1>About</h1>
+				</div>
+			</div>
+		</section>
 		<div class="container">
 			<section class="reasons about">
 				<article class="reasons__article">
