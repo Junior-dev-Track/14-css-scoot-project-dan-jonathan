@@ -52,6 +52,21 @@ h4 {
 	color: $snow;
 }
 
+.pin {
+	color: $navy-dark;
+	font-size: 24px;
+	font-family: 'Space Mono', monospace;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+	.map {
+		.pin {
+			font-size: 13px;
+		}
+	}
+}
+
 nav a {
 	color: $grey-dim;
 
