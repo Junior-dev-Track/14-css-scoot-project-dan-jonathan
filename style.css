@@ -548,7 +548,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   margin-bottom: 164px;
 }
 .hero.home {
-  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/home/home_header_photo.png");
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/home/home_header_photo.webp");
   background-size: cover;
 }
 .hero .hero__content {
@@ -870,7 +870,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   }
 }
 .hero__small.about {
-  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/about/header_photo.png");
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/about/about_header_photo.webp");
 }
 
 .reasons.about > *:not(:last-child) {
@@ -956,7 +956,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 }
 @media screen and (width <= 576px) {
   .hero__small.about {
-    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/about/header_small_photo.png");
+    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/about/about_header_small_photo.webp");
   }
   .faq h2 {
     margin-bottom: 48px;
@@ -1064,7 +1064,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   }
 }
 .hero__small.locations {
-  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/location/locations_header.png");
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/location/locations_header.webp");
 }
 
 .mobil {
@@ -1172,7 +1172,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 /**********************************************/
 @media screen and (max-width: 576px) {
   .hero__small.locations {
-    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/location/locations_small_header.png");
+    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/location/locations_small_header.webp");
   }
   .mobil.cities {
     text-align: center;

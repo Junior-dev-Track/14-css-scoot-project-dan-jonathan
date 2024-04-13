@@ -3,7 +3,7 @@
 .hero__small {
 	&.about {
 		background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
-			url('../images/about/header_photo.png');
+			url('../images/about/about_header_photo.webp');
 	}
 }
 
@@ -118,7 +118,7 @@
 	.hero__small {
 		&.about {
 			background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
-				url('../images/about/header_small_photo.png');
+				url('../images/about/about_header_small_photo.webp');
 		}
 	}
 
