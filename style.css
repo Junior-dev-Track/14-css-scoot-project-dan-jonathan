@@ -166,6 +166,10 @@ body {
   width: 100vw;
 }
 
+html.noscroll {
+  overflow: hidden;
+}
+
 a {
   cursor: pointer;
 }
@@ -346,7 +350,6 @@ footer h2 {
 }
 .header_desktop .cta {
   grid-column: 3/4;
-  display: flex;
   justify-self: flex-end;
 }
 
@@ -404,7 +407,7 @@ footer h2 {
     left: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80vh;
+    height: calc(100vh - 96px);
     margin-left: -16px;
     z-index: 10;
   }
@@ -416,13 +419,17 @@ footer h2 {
   .header_mobil .nav_mobil.active ul {
     display: flex;
     flex-direction: column;
-    height: 85%;
     gap: 40px;
+  }
+  .header_mobil .nav_mobil nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .header_mobil .nav_mobil div {
     background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
-    width: 110%;
+    width: calc(100% + 16px);
   }
 }
 footer > * > * {

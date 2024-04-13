@@ -21,7 +21,6 @@
 	}
 	.cta {
 		grid-column: 3/4;
-		display: flex;
 		justify-self: flex-end;
 	}
 }
@@ -87,7 +86,7 @@
 				left: 0;
 				display: grid;
 				grid-template-columns: 1fr 1fr;
-				height: 80vh;
+				height: calc(100vh - 96px);
 				margin-left: -16px;
 				z-index: 10;
 
@@ -100,15 +99,20 @@
 				ul {
 					display: flex;
 					flex-direction: column;
-					height: 85%;
 					gap: 40px;
 				}
+			}
+
+			nav {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
 			}
 
 			div {
 				background-color: rgba(0, 0, 0, 0.2);
 				height: 100%;
-				width: 110%;
+				width: calc(100% + 16px)
 			}
 		}
 	}

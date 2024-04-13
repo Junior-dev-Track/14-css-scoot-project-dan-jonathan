@@ -2,10 +2,14 @@ const burgerOpen = document.querySelector('#burger__open');
 const navMobile = document.querySelector('#nav__mobile');
 const headerDesktop = document.querySelector('#header__desktop');
 const headerMobile = document.querySelector('#header__mobile');
+const overlayMobile = document.querySelector('#nav_mobile_overlay');
+const html = document.querySelector('html')
+
 let scrollPos = 0;
 
 burgerOpen.addEventListener('click', (e) => {
 	navMobile.classList.toggle('active');
+	html.classList.toggle('noscroll')
 });
 
 window.addEventListener('scroll', () => {
@@ -22,4 +26,8 @@ window.addEventListener('scroll', () => {
 		headerMobile.classList.remove('scroll__up');
 	}
 	scrollPos = document.body.getBoundingClientRect().top;
+});
+
+overlayMobile.addEventListener('click', () => {
+	navMobile.classList.toggle('active');
 });

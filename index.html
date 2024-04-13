@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,12 +13,17 @@
 		<script src="./app.js" defer></script>
 		<title>Scoot - by Dan & Jonathan - Home</title>
 	</head>
-	<body>
+	<body class="">
 		<header id="header">
 			<div class="container">
 				<div class="header_desktop" id="header__desktop">
 					<div class="scoot">
-						<img src="./images/home/scoot.svg" alt="logo scoot" />
+						<a href="./index.html"
+							><img
+								src="./images/home/scoot.svg"
+								alt="logo scoot"
+								class="scoot_svg"
+						/></a>
 					</div>
 					<nav>
 						<ul>
@@ -44,13 +49,14 @@
 							class="croix-burger"
 							id="croix-burger"
 						/>
-						<img
-							src="./images/home/scoot.svg"
-							alt="logo scoot"
-							class="scoot_svg"
-						/>
+						<a href="./index.html"
+							><img
+								src="./images/home/scoot.svg"
+								alt="logo scoot"
+								class="scoot_svg"
+						/></a>
 					</div>
-					<div class="nav_mobil active" id="nav__mobile">
+					<div class="nav_mobil" id="nav__mobile">
 						<nav>
 							<ul>
 								<li><a href="./about.html">About</a></li>
@@ -60,7 +66,7 @@
 							<a href="" class="cta">Get Scootin</a>
 						</nav>
 
-						<div></div>
+						<div id="nav_mobile_overlay"></div>
 					</div>
 				</div>
 			</div>

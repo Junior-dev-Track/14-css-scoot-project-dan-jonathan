@@ -4,6 +4,10 @@ body {
 	width: 100vw;
 }
 
+html.noscroll {
+	overflow: hidden;
+}
+
 a {
 	cursor: pointer;
 }
