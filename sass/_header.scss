@@ -64,16 +64,16 @@
 			background-color: white;
 			grid-template-columns: 1fr 3fr 1fr;
 
-			.croix-burger {
+			.burger__close {
 				display: none;
 
-				&.croix-burger-active {
+				&.burger__close--active {
 					display: block;
 				}
 			}
-			.menu_burger {
+			.burger__open {
 				display: none;
-				&.menu-burger-active {
+				&.burger__menu--active {
 					display: block;
 				}
 			}

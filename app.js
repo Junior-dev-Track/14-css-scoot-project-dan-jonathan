@@ -3,13 +3,23 @@ const navMobile = document.querySelector('#nav__mobile');
 const headerDesktop = document.querySelector('#header__desktop');
 const headerMobile = document.querySelector('#header__mobile');
 const overlayMobile = document.querySelector('#nav_mobile_overlay');
-const html = document.querySelector('html')
+const burgerClose = document.querySelector('#burger__close');
+const html = document.querySelector('html');
 
 let scrollPos = 0;
 
 burgerOpen.addEventListener('click', (e) => {
 	navMobile.classList.toggle('active');
-	html.classList.toggle('noscroll')
+	html.classList.toggle('noscroll');
+	burgerClose.classList.toggle('burger__close--active');
+	burgerOpen.classList.toggle('burger__open');
+});
+
+burgerClose.addEventListener('click', (e) => {
+	navMobile.classList.toggle('active');
+	html.classList.toggle('noscroll');
+	burgerClose.classList.toggle('burger__close--active');
+	burgerOpen.classList.toggle('burger__open');
 });
 
 window.addEventListener('scroll', () => {
@@ -30,4 +40,6 @@ window.addEventListener('scroll', () => {
 
 overlayMobile.addEventListener('click', () => {
 	navMobile.classList.toggle('active');
+	burgerClose.classList.toggle('burger__close--active');
+	burgerOpen.classList.toggle('burger__open');
 });

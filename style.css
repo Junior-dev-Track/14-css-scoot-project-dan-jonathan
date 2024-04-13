@@ -389,16 +389,16 @@ footer h2 {
     background-color: white;
     grid-template-columns: 1fr 3fr 1fr;
   }
-  .header_mobil .header_mobil__burgers .croix-burger {
+  .header_mobil .header_mobil__burgers .burger__close {
     display: none;
   }
-  .header_mobil .header_mobil__burgers .croix-burger.croix-burger-active {
+  .header_mobil .header_mobil__burgers .burger__close.burger__close--active {
     display: block;
   }
-  .header_mobil .header_mobil__burgers .menu_burger {
+  .header_mobil .header_mobil__burgers .burger__open {
     display: none;
   }
-  .header_mobil .header_mobil__burgers .menu_burger.menu-burger-active {
+  .header_mobil .header_mobil__burgers .burger__open.burger__menu--active {
     display: block;
   }
   .header_mobil .nav_mobil.active {
