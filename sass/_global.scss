@@ -39,7 +39,7 @@ main {
 
 .hero__small {
 	padding: 72px 0;
-	overflow: hidden;
+	// overflow: hidden;
 	position: relative;
 	margin-bottom: 132px;
 	-webkit-background-size: cover;
@@ -48,20 +48,20 @@ main {
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	&::after {
-		position: absolute;
-		content: '';
-		width: 234px;
-		height: 62px;
-		background-repeat: no-repeat;
-	}
+	.hero__content {
+		position: relative;
 
-	&::after {
-		top: 0;
-		right: 0;
-		background-image: url('../images/decoration/home/rond_header.svg');
-		background-repeat: no-repeat;
-		transform: translate(15%, 100%);
+		&::after {
+			position: absolute;
+			content: '';
+			width: 234px;
+			height: 62px;
+			background-repeat: no-repeat;
+			top: 0;
+			right: -32px;
+			background-image: url('../images/decoration/home/rond_header.svg');
+			// transform: translate(250%, 0)
+		}
 	}
 
 	.hero__text {
@@ -96,7 +96,6 @@ main {
 		.hero__text {
 			padding: 0;
 			margin: 0 auto;
-
 		}
 	}
 }

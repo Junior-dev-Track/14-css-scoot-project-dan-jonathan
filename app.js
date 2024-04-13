@@ -23,17 +23,15 @@ burgerClose.addEventListener('click', (e) => {
 });
 
 window.addEventListener('scroll', () => {
-	console.log(document.body.getBoundingClientRect().top);
-	if (document.body.getBoundingClientRect().top >= -80) {
-		headerDesktop.classList.remove('scroll__up');
-		headerMobile.classList.remove('scroll__up');
+	if (document.body.getBoundingClientRect().top >= 0) {
+		headerDesktop.classList.remove('scroll__up', 'container');
+		headerMobile.classList.remove('scroll__up', 'container');
 	} else if (document.body.getBoundingClientRect().top >= scrollPos) {
-		console.log('scrollup');
-		headerDesktop.classList.add('scroll__up');
-		headerMobile.classList.add('scroll__up');
+		headerDesktop.classList.add('scroll__up', 'container');
+		headerMobile.classList.add('scroll__up', 'container');
 	} else {
-		headerDesktop.classList.remove('scroll__up');
-		headerMobile.classList.remove('scroll__up');
+		headerDesktop.classList.remove('scroll__up', 'container');
+		headerMobile.classList.remove('scroll__up', 'container');
 	}
 	scrollPos = document.body.getBoundingClientRect().top;
 });
@@ -42,4 +40,5 @@ overlayMobile.addEventListener('click', () => {
 	navMobile.classList.toggle('active');
 	burgerClose.classList.toggle('burger__close--active');
 	burgerOpen.classList.toggle('burger__open');
+	html.classList.toggle('noscroll');
 });

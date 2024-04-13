@@ -201,25 +201,23 @@ main {
 
 .hero__small {
   padding: 72px 0;
-  overflow: hidden;
   position: relative;
   margin-bottom: 132px;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.hero__small::after {
+.hero__small .hero__content {
+  position: relative;
+}
+.hero__small .hero__content::after {
   position: absolute;
   content: "";
   width: 234px;
   height: 62px;
   background-repeat: no-repeat;
-}
-.hero__small::after {
   top: 0;
-  right: 0;
+  right: -32px;
   background-image: url("../images/decoration/home/rond_header.svg");
-  background-repeat: no-repeat;
-  transform: translate(15%, 100%);
 }
 .hero__small .hero__text {
   align-self: flex-start;
@@ -440,7 +438,7 @@ footer h2 {
     justify-content: space-between;
   }
   .header_mobil .nav_mobil div {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.75);
     height: 100%;
     width: calc(100% + 16px);
   }
