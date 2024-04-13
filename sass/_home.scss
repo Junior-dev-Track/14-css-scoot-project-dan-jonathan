@@ -64,16 +64,14 @@
 				position: absolute;
 				content: '';
 				top: 37px;
-				left: -170px;
-				width: 203px;
+				right: 92%;
+				width: 100vw;
 				height: 15px;
-				background-image: url('../images/decoration/home/trait_header.svg');
-				background-repeat: no-repeat;
+				background-color: $yellow;
 			}
 		}
 	}
 }
-
 
 .features {
 	position: relative;
@@ -118,12 +116,10 @@
 	}
 }
 .reasons.home {
-	
-	> *:not(:last-child)  {
-			margin-bottom: 160px;
-		}
+	> *:not(:last-child) {
+		margin-bottom: 160px;
+	}
 }
-
 
 .reasons {
 	img {
@@ -143,20 +139,40 @@
 			z-index: 1;
 		}
 
-		&:nth-child(1) .article__arrow {
-			right: -170px;
-			bottom: 0;
+		&:nth-child(1) {
+			.article__arrow {
+				right: -170px;
+				bottom: 0;
+			}
+			hr {
+				bottom: 135px;
+				left: 150px;
+			}
 		}
 
-		&:nth-child(2) .article__arrow {
-			left: -535px;
-			top: 0;
-			transform: rotate(180deg) scaleY(-1);
+		&:nth-child(2) {
+			.article__arrow {
+				left: -535px;
+				top: 0;
+				transform: rotate(180deg) scaleY(-1);
+			}
+
+			hr {
+				top: 0;
+				right: 500px;
+			}
 		}
 
-		&:nth-child(3) .article__arrow {
-			right: -535px;
-			top: 80px;
+		&:nth-child(3) {
+			.article__arrow {
+				right: -535px;
+				top: 80px;
+			}
+
+			hr {
+				left: 500px;
+				top: 80px;
+			}
 		}
 
 		.article__content {
@@ -168,6 +184,15 @@
 
 		.article__image {
 			position: relative;
+
+			& hr {
+				position: absolute;
+				content: '';
+				width: 100vw;
+				height: 16px;
+				background-color: $yellow;
+				border: none;
+			}
 
 			&::before {
 				position: absolute;
@@ -242,7 +267,7 @@
 				}
 				&::after {
 					top: 100%;
-					left: calc(-100vw/3);
+					left: calc(-100vw / 3);
 				}
 				&::before {
 					display: none;
@@ -251,13 +276,11 @@
 		}
 	}
 
-.reasons.home {
-	
-	> *:not(:last-child)  {
+	.reasons.home {
+		> *:not(:last-child) {
 			margin-bottom: 120px;
 		}
-}
-
+	}
 
 	.features {
 		flex-direction: column;
@@ -346,7 +369,6 @@
 		}
 	}
 
-
 	.features {
 		flex-direction: column;
 		width: 75%;
@@ -372,7 +394,7 @@
 			.features__item__image {
 				width: 56px;
 				height: 56px;
-				img{
+				img {
 					height: 24px;
 				}
 			}

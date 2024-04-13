@@ -13,10 +13,17 @@
 	}
 
 	.reasons__article {
-		&:nth-child(1) .article__arrow {
-			transform: scaleY(-1);
-			right: -170px;
-			bottom: 30px;
+		&:nth-child(1) {
+			.article__arrow {
+				transform: scaleY(-1);
+				right: -170px;
+				bottom: 30px;
+			}
+
+			hr {
+				bottom: 30px;
+				left: 500px;
+			}
 		}
 	}
 }

@@ -185,8 +185,9 @@ main {
 .reasons,
 .advantages,
 .faq,
-.jobs {
-  margin-bottom: 130px;
+.jobs,
+.map {
+  margin-bottom: 120px;
 }
 
 .container {
@@ -581,11 +582,10 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   position: absolute;
   content: "";
   top: 37px;
-  left: -170px;
-  width: 203px;
+  right: 92%;
+  width: 100vw;
   height: 15px;
-  background-image: url("../images/decoration/home/trait_header.svg");
-  background-repeat: no-repeat;
+  background-color: #fcb72b;
 }
 
 .features {
@@ -648,13 +648,25 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   right: -170px;
   bottom: 0;
 }
+.reasons .reasons__article:nth-child(1) hr {
+  bottom: 135px;
+  left: 150px;
+}
 .reasons .reasons__article:nth-child(2) .article__arrow {
   left: -535px;
   top: 0;
   transform: rotate(180deg) scaleY(-1);
 }
+.reasons .reasons__article:nth-child(2) hr {
+  top: 0;
+  right: 500px;
+}
 .reasons .reasons__article:nth-child(3) .article__arrow {
   right: -535px;
+  top: 80px;
+}
+.reasons .reasons__article:nth-child(3) hr {
+  left: 500px;
   top: 80px;
 }
 .reasons .reasons__article .article__content {
@@ -665,6 +677,14 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 }
 .reasons .reasons__article .article__image {
   position: relative;
+}
+.reasons .reasons__article .article__image hr {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 16px;
+  background-color: #fcb72b;
+  border: none;
 }
 .reasons .reasons__article .article__image::before {
   position: absolute;
@@ -848,6 +868,10 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   transform: scaleY(-1);
   right: -170px;
   bottom: 30px;
+}
+.reasons.about .reasons__article:nth-child(1) hr {
+  bottom: 30px;
+  left: 500px;
 }
 
 .faq h2 {
