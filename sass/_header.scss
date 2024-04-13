@@ -31,9 +31,8 @@
 		position: fixed;
 		top: 0px;
 		z-index: 9999;
-		width: unset;
-		max-width: 1440px;
 		background-color: white;
+		box-shadow: $navy-dark 0px 2px 5px;
 	}
 }
 

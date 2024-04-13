@@ -369,9 +369,8 @@ footer h2 {
   position: fixed;
   top: 0px;
   z-index: 9999;
-  width: unset;
-  max-width: 1440px;
   background-color: white;
+  box-shadow: #495567 0px 2px 5px;
 }
 
 .header_mobil,
