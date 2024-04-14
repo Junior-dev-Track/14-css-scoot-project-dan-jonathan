@@ -8,7 +8,7 @@
 
 	&.home {
 		background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
-			url('../images/home/home_header_photo.webp');
+			url('./images/home/home_header_photo.webp');
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -31,7 +31,7 @@
 			height: 62px;
 			top: 77%;
 			left: 99%;
-			background-image: url('../images/decoration/home/rond_header.svg');
+			background-image: url('./images/decoration/home/rond_header.svg');
 		}
 
 		.hero__text {
@@ -57,7 +57,7 @@
 				height: 150px;
 				top: 37px;
 				left: 110%;
-				background-image: url('../images/decoration/home/fleche_header.svg');
+				background-image: url('./images/decoration/home/fleche_header.svg');
 			}
 
 			&::before {

@@ -3,7 +3,7 @@
 .hero__small {
 	&.locations {
 		background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
-			url('../images/location/locations_header.webp');
+			url('./images/location/locations_header.webp');
 	}
 }
 
@@ -123,7 +123,7 @@
 	.hero__small {
 		&.locations {
 			background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
-				url('../images/location/locations_small_header.webp');
+				url('./images/location/locations_small_header.webp');
 		}
 	}
 
