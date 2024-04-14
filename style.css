@@ -446,7 +446,7 @@ footer > * > * {
   margin: 0 auto;
 }
 footer .signup {
-  background-image: url("../images/decoration/rond_footer.svg");
+  background-image: url("./images/decoration/rond_footer.svg");
   background-repeat: no-repeat;
   background-position: 100% 100%;
   padding: 116px 0;
@@ -545,7 +545,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   margin-bottom: 164px;
 }
 .hero.home {
-  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/home/home_header_photo.webp");
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/home/home_header_photo.webp");
   background-size: cover;
 }
 .hero .hero__content {
@@ -561,7 +561,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   height: 62px;
   top: 77%;
   left: 99%;
-  background-image: url("../images/decoration/home/rond_header.svg");
+  background-image: url("./images/decoration/home/rond_header.svg");
 }
 .hero .hero__content .hero__text {
   width: 50%;
@@ -585,7 +585,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   height: 150px;
   top: 37px;
   left: 110%;
-  background-image: url("../images/decoration/home/fleche_header.svg");
+  background-image: url("./images/decoration/home/fleche_header.svg");
 }
 .hero .hero__content .hero__paragraph::before {
   position: absolute;
@@ -867,7 +867,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   }
 }
 .hero__small.about {
-  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/about/about_header_photo.webp");
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/about/about_header_photo.webp");
 }
 
 .reasons.about > *:not(:last-child) {
@@ -931,7 +931,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   min-width: 24px;
   font-size: 32px;
   margin-left: 16px;
-  background-image: url("../images/about/arrow-down.svg");
+  background-image: url("./images/about/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: transform 0.5s ease;
@@ -953,14 +953,14 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 }
 @media screen and (width <= 576px) {
   .hero__small.about {
-    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/about/about_header_small_photo.webp");
+    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/about/about_header_small_photo.webp");
   }
   .faq h2 {
     margin-bottom: 48px;
   }
 }
 .hero__small.careers {
-  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/careers/career_header.png");
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/careers/career_header.png");
 }
 
 .advantages {
@@ -1057,11 +1057,11 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 }
 @media screen and (width <= 576px) {
   .hero__small.careers {
-    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/careers/career_small_header.png");
+    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/careers/career_small_header.png");
   }
 }
 .hero__small.locations {
-  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/location/locations_header.webp");
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/location/locations_header.webp");
 }
 
 .mobil {
@@ -1169,7 +1169,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 /**********************************************/
 @media screen and (max-width: 576px) {
   .hero__small.locations {
-    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("../images/location/locations_small_header.webp");
+    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/location/locations_small_header.webp");
   }
   .mobil.cities {
     text-align: center;
