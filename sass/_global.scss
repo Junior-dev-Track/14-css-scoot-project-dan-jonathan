@@ -50,18 +50,21 @@ main {
 
 	.hero__content {
 		position: relative;
-
-		&::after {
+		img {
 			position: absolute;
-			content: '';
-			width: 234px;
-			height: 62px;
-			background-repeat: no-repeat;
 			top: 0;
-			right: -193px;
-			background-image: url('./images/decoration/home/rond_header.svg');
-			// transform: translate(250%, 0)
+			left: 97%;
 		}
+		// &::after {
+		// 	position: absolute;
+		// 	content: '';
+		// 	width: 234px;
+		// 	height: 62px;
+		// 	background-repeat: no-repeat;
+		// 	top: 0;
+		// 	right: -193px;
+		// 	background-image: url('./images/decoration/home/rond_header.svg');
+		// }
 	}
 
 	.hero__text {
@@ -72,8 +75,10 @@ main {
 @media screen and (width <= 768px) {
 	.hero__small {
 		margin-bottom: 140px;
-		.hero__content::after {
-			right: -32px;
+		.hero__content {
+			img {
+				left: 74%;
+			}
 		}
 
 		.hero__text {
@@ -93,11 +98,9 @@ main {
 		margin-bottom: 72px;
 
 		.hero__content {
-			
-					&::after {
-						display: none;
-					}
-
+			img {
+				display: none;
+			}
 		}
 
 		.hero__text {
@@ -109,6 +112,6 @@ main {
 
 @media screen and (width <= 1110px) {
 	.container {
-		padding: 0 clamp(2vw, 16px, 4vw);
+		padding: 0 clamp(4vw, 16px, 6vw);
 	}
 }

@@ -209,15 +209,10 @@ main {
 .hero__small .hero__content {
   position: relative;
 }
-.hero__small .hero__content::after {
+.hero__small .hero__content img {
   position: absolute;
-  content: "";
-  width: 234px;
-  height: 62px;
-  background-repeat: no-repeat;
   top: 0;
-  right: -193px;
-  background-image: url("./images/decoration/home/rond_header.svg");
+  left: 97%;
 }
 .hero__small .hero__text {
   align-self: flex-start;
@@ -227,8 +222,8 @@ main {
   .hero__small {
     margin-bottom: 140px;
   }
-  .hero__small .hero__content::after {
-    right: -32px;
+  .hero__small .hero__content img {
+    left: 74%;
   }
   .hero__small .hero__text {
     padding-left: 60px;
@@ -244,7 +239,7 @@ main {
     position: relative;
     margin-bottom: 72px;
   }
-  .hero__small .hero__content::after {
+  .hero__small .hero__content img {
     display: none;
   }
   .hero__small .hero__text {
@@ -254,7 +249,7 @@ main {
 }
 @media screen and (width <= 1110px) {
   .container {
-    padding: 0 clamp(2vw, 16px, 4vw);
+    padding: 0 clamp(4vw, 16px, 6vw);
   }
 }
 body {
@@ -308,7 +303,7 @@ h4 {
   color: #f2f5f9;
 }
 
-.pin {
+.city {
   color: #495567;
   font-size: 24px;
   font-family: "Space Mono", monospace;
@@ -316,8 +311,13 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
-  .map .pin {
+  .city {
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .city {
+    font-size: 24px;
   }
 }
 nav a {
@@ -661,7 +661,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 }
 .reasons .reasons__article:nth-child(1) hr {
   bottom: 135px;
-  left: 150px;
+  left: 170px;
 }
 .reasons .reasons__article:nth-child(2) .article__arrow {
   left: -535px;
@@ -886,6 +886,9 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   left: 500px;
 }
 
+.faq {
+  width: 100%;
+}
 .faq h2 {
   text-align: center;
   margin-bottom: 102px;
@@ -902,7 +905,6 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   padding: 40px;
   color: #495567;
   margin-bottom: 16px;
-  transition: min-height 5s ease;
 }
 .faq details:hover {
   background-color: #fff4df;
@@ -995,6 +997,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-bottom: 38px;
 }
 .advantages .advantage img {
   border-radius: 50%;
@@ -1013,6 +1016,36 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   border-radius: 50%;
   position: absolute;
   transform: translateY(50%);
+}
+
+.advantage {
+  display: flex;
+  height: auto;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.advantage span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 96px;
+  background-color: #fcb72b;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(50%);
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.advantage img {
+  border-radius: 50%;
 }
 
 .jobs {
@@ -1184,7 +1217,10 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   .mobil.cities .city {
     padding: 24px 0px;
     margin: 16px 0px;
-    background-color: #f2f5f9;
+    background-color: #fff4df;
+    color: #495567;
+    font-size: 24px;
+    font-weight: bold;
   }
   .map .pin span {
     display: none;

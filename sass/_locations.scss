@@ -135,7 +135,10 @@
 		.city {
 			padding: 24px 0px;
 			margin: 16px 0px;
-			background-color: $snow;
+			background-color: $yellow-light;
+			color: $navy-dark;
+			font-size: 24px;
+			font-weight: bold;
 		}
 	}
 	.map {
