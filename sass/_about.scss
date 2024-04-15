@@ -111,6 +111,22 @@
 }
 
 @media screen and (width <=768px) {
+	.faq {
+		width: 100%;
+		h2 {
+			text-align: center;
+			margin-bottom: 102px;
+		}
+
+		.faq__questions {
+			grid-template-columns: 1fr;
+			gap: 40px;
+
+			h3 {
+				text-align: center;
+			}
+		}
+	}
 }
 
 @media screen and (width <=576px) {

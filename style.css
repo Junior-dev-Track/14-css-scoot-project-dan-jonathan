@@ -959,6 +959,22 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
     right: -260px;
   }
 }
+@media screen and (width <= 768px) {
+  .faq {
+    width: 100%;
+  }
+  .faq h2 {
+    text-align: center;
+    margin-bottom: 102px;
+  }
+  .faq .faq__questions {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .faq .faq__questions h3 {
+    text-align: center;
+  }
+}
 @media screen and (width <= 576px) {
   .hero__small.about {
     background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/about/about_header_small.webp");
