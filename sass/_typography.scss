@@ -52,8 +52,34 @@ h4 {
 	color: $snow;
 }
 
+.city {
+	color: $navy-dark;
+	font-size: 24px;
+	font-family: 'Space Mono', monospace;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+	.city {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.city {
+		font-size: 24px;
+	}
+}
 nav a {
 	color: $grey-dim;
+
+	&:hover {
+		color: $yellow;
+	}
+}
+
+.nav_mobil a {
+	color: $snow;
 }
 
 a.cta {

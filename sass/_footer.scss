@@ -6,10 +6,10 @@ footer {
 	}
 
 	.signup {
-		background-image: url('../images/decoration/rond_footer.svg');
+		background-image: url('./images/decoration/rond_footer.svg');
 		background-repeat: no-repeat;
 		background-position: 100% 100%;
-		padding: 116px;
+		padding: 116px 0;
 		background-color: $navy-dark;
 
 		.signup__content {
@@ -32,7 +32,7 @@ footer {
 
 	nav {
 		background-color: #333a44;
-		padding: 32px;
+		padding: 32px 0;
 
 		.nav__container {
 			display: grid;
@@ -52,6 +52,10 @@ footer {
 				i {
 					font-size: 24px;
 					color: $yellow;
+
+					&:hover {
+						color: $yellow-light;
+					}
 
 					&:not(:last-child) {
 						margin-right: 24px;

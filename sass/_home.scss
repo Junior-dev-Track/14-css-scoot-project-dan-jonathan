@@ -8,7 +8,7 @@
 
 	&.home {
 		background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
-			url('../images/home/home_header_photo.png');
+			url('./images/home/home_header_photo.webp');
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -22,21 +22,16 @@
 		&::after {
 			position: absolute;
 			content: '';
-			width: 452px;
-			height: 150px;
+
 			background-repeat: no-repeat;
-		}
-		&::before {
-			top: 55%;
-			left: 53%;
-			background-image: url('../images/decoration/home/fleche_header.svg');
 		}
 
 		&::after {
+			width: 234px;
+			height: 62px;
 			top: 77%;
 			left: 99%;
-			background-image: url('../images/decoration/home/rond_header.svg');
-			background-repeat: no-repeat;
+			background-image: url('./images/decoration/home/rond_header.svg');
 		}
 
 		.hero__text {
@@ -55,24 +50,27 @@
 			p {
 				margin-bottom: 42px;
 			}
+			&::after {
+				position: absolute;
+				content: '';
+				width: 452px;
+				height: 150px;
+				top: 37px;
+				left: 110%;
+				background-image: url('./images/decoration/home/fleche_header.svg');
+			}
 
 			&::before {
 				position: absolute;
 				content: '';
 				top: 37px;
-				left: -170px;
-				width: 203px;
+				right: 92%;
+				width: 100vw;
 				height: 15px;
-				background-image: url('../images/decoration/home/trait_header.svg');
-				background-repeat: no-repeat;
+				background-color: $yellow;
 			}
 		}
 	}
-}
-
-.features,
-.reasons {
-	margin-bottom: 194px;
 }
 
 .features {
@@ -87,7 +85,7 @@
 		position: absolute;
 		content: '';
 		height: 1px;
-		width: 100%;
+		width: 100vw;
 		border: 8px solid $grey-light;
 		right: calc(100% / 3.33);
 		top: 42px;
@@ -118,6 +116,11 @@
 		}
 	}
 }
+.reasons.home {
+	> *:not(:last-child) {
+		margin-bottom: 160px;
+	}
+}
 
 .reasons {
 	img {
@@ -129,7 +132,6 @@
 		justify-content: space-between;
 		align-items: center;
 		position: relative;
-		margin-bottom: 164px;
 		gap: 62px;
 
 		.article__arrow {
@@ -138,31 +140,60 @@
 			z-index: 1;
 		}
 
-		&:nth-child(1) .article__arrow {
-			right: -170px;
-			bottom: 0;
+		&:nth-child(1) {
+			.article__arrow {
+				right: -170px;
+				bottom: 0;
+			}
+			hr {
+				bottom: 135px;
+				left: 170px;
+			}
 		}
 
-		&:nth-child(2) .article__arrow {
-			left: -535px;
-			top: 0;
-			transform: rotate(180deg) scaleY(-1);
+		&:nth-child(2) {
+			.article__arrow {
+				left: -535px;
+				top: 0;
+				transform: rotate(180deg) scaleY(-1);
+			}
+
+			hr {
+				top: 0;
+				right: 500px;
+			}
 		}
 
-		&:nth-child(3) .article__arrow {
-			right: -535px;
-			top: 80px;
+		&:nth-child(3) {
+			.article__arrow {
+				right: -535px;
+				top: 80px;
+			}
+
+			hr {
+				left: 500px;
+				top: 80px;
+			}
 		}
 
 		.article__content {
 			display: flex;
 			flex-direction: column;
 			gap: 16px;
-			width: 40%;
+			width: 45%;
 		}
 
 		.article__image {
 			position: relative;
+
+			& hr {
+				position: absolute;
+				content: '';
+				width: 100vw;
+				height: 16px;
+				background-color: $yellow;
+				border: none;
+			}
 
 			&::before {
 				position: absolute;
@@ -192,6 +223,16 @@
 	}
 }
 
+@media screen and (768px < width <= 1024px) {
+	.hero {
+		.hero__content {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
 @media screen and (width <= 768px) {
 	
 	.hero {
@@ -203,11 +244,6 @@
 		}
 
 		.hero__content {
-			&::before {
-				top: 108%;
-				left: -16%;
-			}
-
 			&::after {
 				top: 120%;
 				left: 60%;
@@ -231,7 +267,10 @@
 				p {
 					margin-bottom: 42px;
 				}
-
+				&::after {
+					top: 100%;
+					left: calc(-100vw / 3);
+				}
 				&::before {
 					display: none;
 				}
@@ -239,9 +278,10 @@
 		}
 	}
 
-	.features,
-	.reasons {
-		margin-bottom: 140px;
+	.reasons.home {
+		> *:not(:last-child) {
+			margin-bottom: 120px;
+		}
 	}
 
 	.features {
@@ -318,11 +358,6 @@
 		}
 
 		.hero__content {
-			&::before {
-				top: 100%;
-				left: -100%;
-			}
-
 			&::after {
 				display: none;
 			}
@@ -330,17 +365,20 @@
 			.hero__text {
 				width: 80%;
 			}
-		}
-	}
 
-	.features,
-	.reasons {
-		margin-bottom: 125px;
+			.hero__paragraph {
+				&::after {
+					top: 100%;
+					left: -125%;
+				}
+			}
+		}
 	}
 
 	.features {
 		flex-direction: column;
 		width: 75%;
+		gap: 46px;
 
 		&::after {
 			display: none;
@@ -358,6 +396,14 @@
 					margin-bottom: 28px;
 				}
 			}
+
+			.features__item__image {
+				width: 56px;
+				height: 56px;
+				img {
+					height: 24px;
+				}
+			}
 		}
 	}
 
@@ -370,7 +416,8 @@
 			}
 
 			&:nth-child(1) .article__arrow {
-				left: 0px;
+				left: -16px;
+				right: unset;
 				bottom: 0;
 			}
 
