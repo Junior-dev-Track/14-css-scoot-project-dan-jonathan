@@ -31,8 +31,23 @@
 		position: fixed;
 		top: 0px;
 		z-index: 9999;
-		background-color: white;
+		background-color: rgb(255, 255, 255);
 		box-shadow: $navy-dark 0px 2px 5px;
+		transition: all 1.5s ease, opacity 1s ease; 
+		.scoot_svg {
+			opacity: 0; /* Image initialement transparente */
+			animation: fadeIn 1s ease forwards; /* Animation d'apparition avec une durée de 1 seconde */
+		}
+		
+		@keyframes fadeIn {
+			from {
+				opacity: 0; /* Opacité initiale à 0 */
+			}
+			to {
+				opacity: 1; /* Opacité finale à 1 */
+			}
+		}
+		
 	}
 }
 
@@ -88,6 +103,7 @@
 				height: calc(100vh - 96px);
 				margin-left: -16px;
 				z-index: 10;
+				
 
 				nav {
 					padding: 32px;
