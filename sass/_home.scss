@@ -82,6 +82,7 @@
 	align-items: flex-start;
 	gap: 34px;
 
+
 	&::after {
 		position: absolute;
 		content: '';
@@ -192,6 +193,7 @@
 }
 
 @media screen and (width <= 768px) {
+	
 	.hero {
 		padding: 137px 0 206px 0;
 		display: flex;
@@ -246,6 +248,7 @@
 		flex-direction: column;
 		width: 75%;
 		margin: auto;
+		padding-bottom: 100px;
 
 		&::after {
 			left: 42px;
@@ -271,12 +274,14 @@
 	.reasons {
 		.reasons__article {
 			flex-direction: column;
+			margin-bottom: 100px;
 
 			.article__content {
 				order: 2;
 				width: 74%;
 				align-items: center;
 				text-align: center;
+				gap: 45px;
 			}
 
 			.article__image {
@@ -297,6 +302,7 @@
 			&:nth-child(3) .article__arrow {
 				right: -535px;
 				top: 80px;
+				margin-bottom: -150px;
 			}
 		}
 	}
