@@ -3,7 +3,7 @@
 .hero__small {
 	&.careers {
 		background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
-			url('./images/careers/career_header.png');
+			url('/images/careers/career_header.png');
 	}
 }
 
@@ -110,7 +110,7 @@
 	.hero__small {
 		&.careers {
 			background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
-				url('./images/careers/career_small_header.png');
+				url('/images/careers/career_small_header.png');
 		}
 	}
 }
