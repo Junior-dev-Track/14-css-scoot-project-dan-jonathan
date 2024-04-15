@@ -1,69 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Scoot - by Dan & Jonathan - Home" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preload" fetchpriority="high" href="./images/home/home_header_photo.webp" type="image/webp">
 		<script
 			src="https://kit.fontawesome.com/6cf87d1226.js"
 			crossorigin="anonymous"
 			defer
 		></script>
-        <script src="./app.js"></script>
-    <title>Scoot - by Dan & Jonathan - Home</title>
-</head>
-<body>
- <header>
-        <div class="container">
-            <div class="header_desktop" id="header__desktop">
-                <div class="scoot"><img src="./images/home/scoot.svg" alt="logo scoot">
-                </div>
-                <nav>
-                    <ul>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./locations.html">Location</a></li>
-                    <li><a href="./careers.html">Careers</a></li>
-                    </ul>
-                </nav>
-                <a href="" class="cta">Get Scootin</a>
-            </div>
+		<script src="./app.js" defer></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-            <div class="header_mobil" id="header__mobile">
-                <div class="burgers ">
-                    <img src="./images/decoration/burger_menu.svg" alt="button-menu-burger" class="menu_burger" id="burger__open">
-                    <img src="./images/decoration/croix-burger.svg" alt="" class="croix-burger" id="croix-burger">
-                </div>
-                <img src="./images/home/scoot.svg" alt="logo scoot" class="scoot_svg">
-            </div>
-            <div class="nav_mobil active" id="nav__mobile">
-                <nav>
-                    <ul>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./locations.html">Location</a></li>
-                        <li><a href="./careers.html">Careers</a></li>
-                    </ul> 
-                </nav>
-                <a href="" class="cta">Get Scootin</a>
-            </div>
-               
-        </div>
-    </header>
-
-				<div class="header_mobil" id="header__mobile">
-					<img
-						src="./images/decoration/burger_menu.svg"
-						alt="button-menu-burger"
-						class="menu_burger"
-						id="burger__open"
-					/>
-					<img
-						src="./images/home/scoot.svg"
-						alt="logo scoot"
-						class="scoot_svg"
-					/>
-				</div>
-				<div class="nav_mobil active" id="nav__mobile">
+		<title>Scoot - by Dan & Jonathan - Home</title>
+	</head>
+	<body class="">
+		<header id="header">
+			<div class="container">
+				<div class="header_desktop" id="header__desktop">
+					<div class="scoot">
+						<a href="./index.html"
+							><img
+								src="./images/home/scoot.svg"
+								alt="logo scoot"
+								class="scoot_svg"
+						/></a>
+					</div>
 					<nav>
 						<ul>
 							<li><a href="./about.html">About</a></li>
@@ -73,8 +38,44 @@
 					</nav>
 					<a href="" class="cta">Get Scootin</a>
 				</div>
+
+				<div class="header_mobil" id="header__mobile">
+					<div class="header_mobil__burgers">
+						<img
+							src="./images/decoration/burger_menu.svg"
+							alt="button-menu-burger"
+							class="burger__open--active"
+							id="burger__open"
+						/>
+						<img
+							src="./images/decoration/croix-burger.svg"
+							alt=""
+							class="burger__close"
+							id="burger__close"
+						/>
+						<a href="./index.html"
+							><img
+								src="./images/home/scoot.svg"
+								alt="logo scoot"
+								class="scoot_svg"
+						/></a>
+					</div>
+					<div class="nav_mobil" id="nav__mobile">
+						<nav>
+							<ul>
+								<li><a href="./about.html">About</a></li>
+								<li><a href="./locations.html">Location</a></li>
+								<li><a href="./careers.html">Careers</a></li>
+							</ul>
+							<a href="" class="cta">Get Scootin</a>
+						</nav>
+
+						<div id="nav_mobile_overlay"></div>
+					</div>
+				</div>
 			</div>
 		</header>
+
 		<main>
 			<section class="hero home">
 				<div class="hero__content container">
@@ -150,12 +151,13 @@
 							<a href="" class="cta">Learn More</a>
 						</div>
 						<div class="article__image">
-							<img src="./images/home/home_01.png" alt="" />
+							<img src="./images/home/home_01.webp" alt="" />
 							<img
 								class="article__arrow"
 								src="./images/decoration/home/fleche_photo_1.svg"
 								alt=""
 							/>
+							<hr />
 						</div>
 					</article>
 					<article class="reasons__article">
@@ -173,12 +175,13 @@
 							<a href="" class="cta">Learn More</a>
 						</div>
 						<div class="article__image">
-							<img src="./images/home/home_02.png" alt="" />
+							<img src="./images/home/home_02.webp" alt="" />
 							<img
 								class="article__arrow"
 								src="./images/decoration/home/fleche_photo_1.svg"
 								alt=""
 							/>
+							<hr />
 						</div>
 					</article>
 					<article class="reasons__article">
@@ -196,27 +199,29 @@
 							<a href="" class="cta">Learn More</a>
 						</div>
 						<div class="article__image">
-							<img src="./images/home/home_03.png" alt="" />
+							<img src="./images/home/home_03.webp" alt="" />
 							<img
 								class="article__arrow"
 								src="./images/decoration/home/fleche_photo_1.svg"
 								alt=""
 							/>
+							<hr />
 						</div>
 					</article>
 				</section>
 			</div>
 		</main>
+
 		<footer>
 			<div class="signup">
 				<div class="signup__content container">
 					<h2>Sign up and Scoot off today</h2>
 					<div class="signup__stores">
 						<a href=""
-							><img src="../images/home/apple_store.svg" alt="Apple Store Logo"
+							><img src="./images/home/apple_store.svg" alt="Apple Store Logo"
 						/></a>
 						<a href=""
-							><img src="../images/home/play_store.svg" alt="Play Store Logo"
+							><img src="./images/home/play_store.svg" alt="Play Store Logo"
 						/></a>
 					</div>
 				</div>

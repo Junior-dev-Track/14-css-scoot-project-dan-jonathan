@@ -4,6 +4,10 @@ body {
 	width: 100vw;
 }
 
+html.noscroll {
+	overflow: hidden;
+}
+
 a {
 	cursor: pointer;
 }
@@ -19,8 +23,9 @@ main {
 .reasons,
 .advantages,
 .faq,
-.jobs {
-	margin-bottom: 130px;
+.jobs,
+.map {
+	margin-bottom: 120px;
 }
 
 .container {
@@ -34,7 +39,7 @@ main {
 
 .hero__small {
 	padding: 72px 0;
-	overflow: hidden;
+	// overflow: hidden;
 	position: relative;
 	margin-bottom: 132px;
 	-webkit-background-size: cover;
@@ -43,20 +48,23 @@ main {
 	background-size: cover;
 	background-repeat: no-repeat;
 
-	&::after {
-		position: absolute;
-		content: '';
-		width: 234px;
-		height: 62px;
-		background-repeat: no-repeat;
-	}
-
-	&::after {
-		top: 0;
-		right: 0;
-		background-image: url('../images/decoration/home/rond_header.svg');
-		background-repeat: no-repeat;
-		transform: translate(15%, 100%);
+	.hero__content {
+		position: relative;
+		img {
+			position: absolute;
+			top: 0;
+			left: 97%;
+		}
+		// &::after {
+		// 	position: absolute;
+		// 	content: '';
+		// 	width: 234px;
+		// 	height: 62px;
+		// 	background-repeat: no-repeat;
+		// 	top: 0;
+		// 	right: -193px;
+		// 	background-image: url('./images/decoration/home/rond_header.svg');
+		// }
 	}
 
 	.hero__text {
@@ -67,11 +75,16 @@ main {
 @media screen and (width <= 768px) {
 	.hero__small {
 		margin-bottom: 140px;
+		.hero__content {
+			img {
+				left: 74%;
+			}
+		}
+
 		.hero__text {
 			padding-left: 60px;
 		}
 		&.about {
-			background-size: auto;
 			background-position: 36% 50%;
 		}
 	}
@@ -84,19 +97,21 @@ main {
 		position: relative;
 		margin-bottom: 72px;
 
-		&::after {
-			display: none;
+		.hero__content {
+			img {
+				display: none;
+			}
 		}
 
 		.hero__text {
 			padding: 0;
-			text-align: center;
+			margin: 0 auto;
 		}
 	}
 }
 
 @media screen and (width <= 1110px) {
 	.container {
-		padding: 0 clamp(2vw, 16px, 4vw);
+		padding: 0 clamp(4vw, 16px, 6vw);
 	}
 }
