@@ -58,8 +58,8 @@ main {
 			height: 62px;
 			background-repeat: no-repeat;
 			top: 0;
-			right: -32px;
-			background-image: url('../images/decoration/home/rond_header.svg');
+			right: -193px;
+			background-image: url('./images/decoration/home/rond_header.svg');
 			// transform: translate(250%, 0)
 		}
 	}
@@ -72,11 +72,14 @@ main {
 @media screen and (width <= 768px) {
 	.hero__small {
 		margin-bottom: 140px;
+		.hero__content::after {
+			right: -32px;
+		}
+
 		.hero__text {
 			padding-left: 60px;
 		}
 		&.about {
-			background-size: auto;
 			background-position: 36% 50%;
 		}
 	}
@@ -89,8 +92,12 @@ main {
 		position: relative;
 		margin-bottom: 72px;
 
-		&::after {
-			display: none;
+		.hero__content {
+			
+					&::after {
+						display: none;
+					}
+
 		}
 
 		.hero__text {

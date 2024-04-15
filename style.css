@@ -216,8 +216,8 @@ main {
   height: 62px;
   background-repeat: no-repeat;
   top: 0;
-  right: -32px;
-  background-image: url("../images/decoration/home/rond_header.svg");
+  right: -193px;
+  background-image: url("./images/decoration/home/rond_header.svg");
 }
 .hero__small .hero__text {
   align-self: flex-start;
@@ -227,11 +227,13 @@ main {
   .hero__small {
     margin-bottom: 140px;
   }
+  .hero__small .hero__content::after {
+    right: -32px;
+  }
   .hero__small .hero__text {
     padding-left: 60px;
   }
   .hero__small.about {
-    background-size: auto;
     background-position: 36% 50%;
   }
 }
@@ -242,7 +244,7 @@ main {
     position: relative;
     margin-bottom: 72px;
   }
-  .hero__small::after {
+  .hero__small .hero__content::after {
     display: none;
   }
   .hero__small .hero__text {
@@ -446,7 +448,7 @@ footer > * > * {
   margin: 0 auto;
 }
 footer .signup {
-  background-image: url("/images/decoration/rond_footer.svg");
+  background-image: url("./images/decoration/rond_footer.svg");
   background-repeat: no-repeat;
   background-position: 100% 100%;
   padding: 116px 0;
@@ -682,7 +684,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 40%;
+  width: 45%;
 }
 .reasons .reasons__article .article__image {
   position: relative;
@@ -855,7 +857,8 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
     width: 311px;
   }
   .reasons .reasons__article:nth-child(1) .article__arrow {
-    left: 0px;
+    left: -16px;
+    right: unset;
     bottom: 0;
   }
   .reasons .reasons__article:nth-child(2) .article__arrow {
@@ -867,7 +870,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   }
 }
 .hero__small.about {
-  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/about/about_header_photo.webp");
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/about/about_header.webp");
 }
 
 .reasons.about > *:not(:last-child) {
@@ -931,7 +934,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   min-width: 24px;
   font-size: 32px;
   margin-left: 16px;
-  background-image: url("/images/about/arrow-down.svg");
+  background-image: url("./images/about/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transition: transform 0.5s ease;
@@ -948,19 +951,18 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
   .reasons.about .reasons__article:nth-child(1) .article__arrow {
     transform: scaleY(-1);
     right: -260px;
-    bottom: 30px;
   }
 }
 @media screen and (width <= 576px) {
   .hero__small.about {
-    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("/images/about/about_header_small_photo.webp");
+    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/about/about_header_small.webp");
   }
   .faq h2 {
     margin-bottom: 48px;
   }
 }
 .hero__small.careers {
-  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("/images/careers/career_header.png");
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/careers/career_header.webp");
 }
 
 .advantages {
@@ -1057,11 +1059,11 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 }
 @media screen and (width <= 576px) {
   .hero__small.careers {
-    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("/images/careers/career_small_header.png");
+    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/careers/career_header_small.webp");
   }
 }
 .hero__small.locations {
-  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("/images/location/locations_header.webp");
+  background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/location/locations_header.webp");
 }
 
 .mobil {
@@ -1169,7 +1171,7 @@ footer nav .nav__container .footer__socials i:not(:last-child) {
 /**********************************************/
 @media screen and (max-width: 576px) {
   .hero__small.locations {
-    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("/images/location/locations_small_header.webp");
+    background-image: linear-gradient(to bottom, hsla(223, 31%, 27%, 0.75), hsla(223, 31%, 27%, 0.75)), url("./images/location/locations_small_header.webp");
   }
   .mobil.cities {
     text-align: center;
