@@ -24,20 +24,20 @@ h4 {
 }
 
 h1 {
-	font-size: clamp(40px, 5vw, 56px);
-	line-height: clamp(40px, 5vw, 56px);
+	font-size: clamp(40px, 9vw, 56px);
+	line-height: clamp(40px, 9vw, 56px);
 	letter-spacing: -2.5px;
 	color: $snow;
 }
 
 h2 {
-	font-size: clamp(32px, 4vw, 48px);
-	line-height: clamp(32px, 4vw, 48px);
+	font-size: clamp(32px, 7vw, 48px);
+	line-height: clamp(32px, 7vw, 48px);
 	letter-spacing: -2.14px;
 }
 
 h3 {
-	font-size: clamp(24px, 3.5vw, 40px);
+	font-size: clamp(24px, 5.5vw, 40px);
 	line-height: 48px;
 	letter-spacing: -1.79px;
 }
@@ -52,8 +52,31 @@ h4 {
 	color: $snow;
 }
 
+.pin {
+	color: $navy-dark;
+	font-size: 24px;
+	font-family: 'Space Mono', monospace;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+	.map {
+		.pin {
+			font-size: 13px;
+		}
+	}
+}
+
 nav a {
 	color: $grey-dim;
+
+	&:hover {
+		color: $yellow;
+	}
+}
+
+.nav_mobil a {
+	color: $snow;
 }
 
 a.cta {

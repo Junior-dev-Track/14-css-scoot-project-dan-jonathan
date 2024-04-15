@@ -1,0 +1,129 @@
+@import './variables';
+
+.hero__small {
+	&.about {
+		background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
+			url('./images/about/about_header.webp');
+	}
+}
+
+.reasons.about {
+	> *:not(:last-child) {
+		margin-bottom: 120px;
+	}
+
+	.reasons__article {
+		&:nth-child(1) {
+			.article__arrow {
+				transform: scaleY(-1);
+				right: -170px;
+				bottom: 30px;
+			}
+
+			hr {
+				bottom: 30px;
+				left: 500px;
+			}
+		}
+	}
+}
+
+.faq {
+	h2 {
+		text-align: center;
+		margin-bottom: 102px;
+	}
+
+	.faq__questions {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 31.5% 1fr;
+		gap: 106px;
+		margin-bottom: 60px;
+	}
+
+	details {
+		background-color: $snow;
+		padding: 40px;
+		color: $navy-dark;
+		margin-bottom: 16px;
+		transition: min-height 5s ease;
+
+		&:hover {
+			background-color: $yellow-light;
+		}
+	}
+
+	details[open] summary ~ * {
+		animation: show-text 0.5s ease-in-out;
+	}
+
+	@keyframes show-text {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	summary {
+		cursor: pointer;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+	}
+	summary::-webkit-details-marker {
+		display: none;
+	}
+	summary:after {
+		content: '';
+		color: $yellow;
+		width: 18px;
+		min-width: 24px;
+		font-size: 32px;
+		margin-left: 16px;
+		background-image: url('./images/about/arrow-down.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		transition: transform 0.5s ease;
+	}
+
+	details[open] summary:after {
+		content: '';
+		transform: rotate(180deg);
+	}
+
+	details[open] summary {
+		margin-bottom: 24px;
+	}
+}
+
+@media screen and (768px <= width <=1024px) {
+	.reasons.about {
+		.reasons__article {
+			&:nth-child(1) .article__arrow {
+				transform: scaleY(-1);
+				right: -260px;
+			}
+		}
+	}
+}
+
+@media screen and (width <=768px) {
+}
+
+@media screen and (width <=576px) {
+	.hero__small {
+		&.about {
+			background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
+				url('./images/about/about_header_small.webp');
+		}
+	}
+
+	.faq {
+		h2 {
+			margin-bottom: 48px;
+		}
+	}
+}

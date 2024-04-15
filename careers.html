@@ -1,131 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Scoot - by Dan & Jonathan - Home">
-    <link rel="stylesheet" href="style.css">
-			<script
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Scoot - by Dan & Jonathan - Careers" />
+		<link rel="stylesheet" href="style.css" />
+		<script
 			src="https://kit.fontawesome.com/6cf87d1226.js"
 			crossorigin="anonymous"
 			defer
 		></script>
-    <title>Scoot - by Dan & Jonathan - Home</title>
-</head>
-<body>
-
-	<header>
-		<div class="container">
-			
-			<div class="header_desktop">
-				<div class="scoot"><img src="./images/home/scoot.svg" alt="logo scoot">
-				</div>
-				<nav>
-					<ul>
-						<li><a href="./home.html">Careers</a></li>
-						<li><a href="./about.html">About</a></li>
-						<li><a href="./locations.html">Location</a></li>
-					</ul>
-				</nav>
-				<a href="" class="cta">Get Scootin</a>
-			</div>
-			<div class="header_mobil">
-				
-				<img src="./images/decoration/burger_menu.svg" alt="button-menu-burger" class="menu_burger">
-				<img src="./images/home/scoot.svg" alt="logo scoot" class="scoot_svg">
-			</div>
-			<div class="nav_mobil active">
-				<nav>
-					<ul>
-						<li><a href="./home.html">Careers</a></li>
-						<li><a href="./about.html">About</a></li>
-						<li><a href="./locations.html">Location</a></li>
-					</ul> 
-				</nav>
-				<a href="" class="cta">Get Scootin</a>
-			</div>
-			   
-		</div>
-	</header>
-	<div class="container">
-			<section class="advantages">
-				<h2>Why you join us?</h2>
-				<div class="advantage advantage_1">
-					<div class="image">
-						<img src="./images/careers/career_01_photo.png" alt="">
-						<span>01</span>
+		<script src="./app.js" defer></script>
+		<title>Scoot - by Dan & Jonathan - Careers</title>
+	</head>
+	<body>
+		<header id="header">
+			<div class="container">
+				<div class="header_desktop" id="header__desktop">
+					<div class="scoot">
+						<a href="./index.html"
+							><img
+								src="./images/home/scoot.svg"
+								alt="logo scoot"
+								class="scoot_svg"
+						/></a>
 					</div>
-						<h4>Our tech</h4>
-						<p>We’re using cutting edge technology to drive accessible urban 
-						transportation forward. Our fully electric scooters are a joy to ride!</p>
-				</div>
-				<div class="advantage advantage_2">
-					<div class="image">
-						<img src="./images/careers/career_02_photo.png" alt="">
-						<span>02</span>
-					</div>
-						<h4>Our integrity</h4>
-						<p>We are fully committed to deliver a great yet safe, sustainable 
-						micro-mobility experience in every city we serve.</p>
-				</div>
-				<div class="advantage advantage_3">
-					<div class="image">
-						<img src="./images/careers/career_03_photo.png" alt="">
-						<span>03</span>
-					</div>
-						<h4>Our community</h4>
-						<p>We support every community we serve. All workers are paid a living 
-						wage based on their location and are Scoot employees.</p>
+					<nav>
+						<ul>
+							<li><a href="./about.html">About</a></li>
+							<li><a href="./locations.html">Location</a></li>
+							<li><a href="./careers.html">Careers</a></li>
+						</ul>
+					</nav>
+					<a href="" class="cta">Get Scootin</a>
 				</div>
 
+				<div class="header_mobil" id="header__mobile">
+					<div class="header_mobil__burgers">
+						<img
+							src="./images/decoration/burger_menu.svg"
+							alt="button-menu-burger"
+							class="burger__open--active"
+							id="burger__open"
+						/>
+						<img
+							src="./images/decoration/croix-burger.svg"
+							alt=""
+							class="burger__close"
+							id="burger__close"
+						/>
+						<a href="./index.html"
+							><img
+								src="./images/home/scoot.svg"
+								alt="logo scoot"
+								class="scoot_svg"
+						/></a>
+					</div>
+					<div class="nav_mobil" id="nav__mobile">
+						<nav>
+							<ul>
+								<li><a href="./about.html">About</a></li>
+								<li><a href="./locations.html">Location</a></li>
+								<li><a href="./careers.html">Careers</a></li>
+							</ul>
+							<a href="" class="cta">Get Scootin</a>
+						</nav>
+
+						<div id="nav_mobile_overlay"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero__small careers">
+				<div class="hero__content container">
+					<div class="hero__text">
+						<h1>Careers</h1>
+					</div>
+				</div>
 			</section>
-	</div>
-	<div class="container">
-		<section class="jobs">
-			<div class="job">
-				<div class="general">
-					<h4>General Manager</h4>
-					Jakarta, Indonesia
-				</div>
-				<a href="" class="cta">Apply</a>
+			<div class="container">
+				<section class="reasons">
+					<article class="reasons__article">
+						<div class="article__content">
+							<h2>Care to join our mission?</h2>
+							<p>
+								We’re always looking for ambitious individuals to help us on our
+								journey. If you’re passionate about our mission to provide
+								clean, accessible transport to improve urban living we want to
+								hear from you!
+							</p>
+							<a href="" class="cta">Say Hello</a>
+						</div>
+						<div class="article__image">
+							<img src="./images/careers/career_photo_1.webp" alt="" />
+							<img
+								class="article__arrow"
+								src="./images/decoration/home/fleche_photo_1.svg"
+								alt=""
+							/>
+							<hr>
+						</div>
+					</article>
+				</section>
+				<section class="advantages">
+					<h2>Why you join us?</h2>
+					<div class="advantage advantage_1">
+						<div class="image">
+							<img src="./images/careers/career_01_photo.webp" alt="" />
+							<span>01</span>
+						</div>
+						<h4>Our tech</h4>
+						<p>
+							We’re using cutting edge technology to drive accessible urban
+							transportation forward. Our fully electric scooters are a joy to
+							ride!
+						</p>
+					</div>
+					<div class="advantage advantage_2">
+						<div class="image">
+							<img src="./images/careers/career_02_photo.webp" alt="" />
+							<span>02</span>
+						</div>
+						<h4>Our integrity</h4>
+						<p>
+							We are fully committed to deliver a great yet safe, sustainable
+							micro-mobility experience in every city we serve.
+						</p>
+					</div>
+					<div class="advantage advantage_3">
+						<div class="image">
+							<img src="./images/careers/career_03_photo.webp" alt="" />
+							<span>03</span>
+						</div>
+						<h4>Our community</h4>
+						<p>
+							We support every community we serve. All workers are paid a living
+							wage based on their location and are Scoot employees.
+						</p>
+					</div>
+				</section>
 			</div>
-			<div class="job">
-				<div class="ui-ux">
-					<h4>UI/UX Designer</h4>
-					Yokohama, Japan
-				</div>
-				<a href="" class="cta">Apply</a>
+			<div class="container">
+				<section class="jobs">
+					<div class="job">
+						<div class="general">
+							<h4>General Manager</h4>
+							Jakarta, Indonesia
+						</div>
+						<a href="" class="cta">Apply</a>
+					</div>
+					<div class="job">
+						<div class="ui-ux">
+							<h4>UI/UX Designer</h4>
+							Yokohama, Japan
+						</div>
+						<a href="" class="cta">Apply</a>
+					</div>
+					<div class="job">
+						<div class="blog">
+							<h4>Blog Content Copywriter</h4>
+							New York, United States
+						</div>
+						<a href="" class="cta">Apply</a>
+					</div>
+					<div class="job">
+						<div class="graphic">
+							<h4>Graphic Designer</h4>
+							New York, United States
+						</div>
+						<a href="" class="cta">Apply</a>
+					</div>
+					<div class="job">
+						<div class="fleet">
+							<h4>Fleet Supervisor</h4>
+							Jakarta, Indonesia
+						</div>
+						<a href="" class="cta">Apply</a>
+					</div>
+					<div class="job">
+						<div class="analyst">
+							<h4>UX Analyst</h4>
+							London, United Kingdom
+						</div>
+						<a href="" class="cta">Apply</a>
+					</div>
+				</section>
 			</div>
-			<div class="job">
-				<div class="blog">
-					<h4>Blog Content Copywriter</h4>
-					New York, United States
-				</div>
-				<a href="" class="cta">Apply</a>
-			</div>
-			<div class="job">
-				<div class="graphic">
-					<h4>Graphic Designer</h4>
-					New York, United States
-				</div>
-				<a href="" class="cta">Apply</a>
-			</div>
-			<div class="job">
-				<div class="fleet">
-					<h4>Fleet Supervisor</h4>
-					Jakarta, Indonesia
-				</div>
-				<a href="" class="cta">Apply</a>
-			</div>
-			<div class="job">
-				<div class="analyst">
-					<h4>UX Analyst</h4>
-					London, United Kingdom
-				</div>
-				<a href="" class="cta">Apply</a>
-			</div>
-		</section>
-	</div>
+		</main>
 
 		<footer>
 			<div class="signup">
@@ -133,10 +196,10 @@
 					<h2>Sign up and Scoot off today</h2>
 					<div class="signup__stores">
 						<a href=""
-							><img src="../images/home/apple_store.svg" alt="Apple Store Logo"
+							><img src="./images/home/apple_store.svg" alt="Apple Store Logo"
 						/></a>
 						<a href=""
-							><img src="../images/home/play_store.svg" alt="Play Store Logo"
+							><img src="./images/home/play_store.svg" alt="Play Store Logo"
 						/></a>
 					</div>
 				</div>
@@ -162,7 +225,5 @@
 				</div>
 			</nav>
 		</footer>
-    
-</body>
-</html>
+	</body>
 </html>

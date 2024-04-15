@@ -1,16 +1,22 @@
 @import './variables';
 
+.hero__small {
+	&.careers {
+		background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
+			url('./images/careers/career_header.webp');
+	}
+}
 
-section.advantages {
-    
-    text-align: center;
-    h2 {
-        grid-column: 1/4;
-    }
+.advantages {
+	text-align: center;
+	h2 {
+		grid-column: 1/4;
+	}
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 42px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 42px;
+
 
     .advantage.advantage_1 {
         grid-column: 1/2;
@@ -57,59 +63,91 @@ section.advantages {
     
 } 
 
-section.jobs {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 10px;
 
-    .job {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        background-color: $snow;
-        padding: 36px 64px;
-    }
+	.advantage {
+		display: flex;
+		height: auto;
+		gap: 30px;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+	}
+	.image {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	.advantage img {
+		border-radius: 50%;
+	}
+	span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		color: black;
+		background-color: $yellow;
+		border-radius: 50%;
+		position: absolute;
+		transform: translateY(50%);
+	}
+}
 
+.jobs {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+
+	.job {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		background-color: $snow;
+		padding: 36px 64px;
+	}
 }
 /**********************************************/
-@media screen  and (max-width: 768px) {
-    .container {
-        display: flex;
-        justify-content: center;
-    }
-    section.advantages {
-        max-width: 457px;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    section.jobs {
-        .job {
-    padding: 36px 48px;
-}
-    }
+@media screen and (max-width: 768px) {
+	.advantages {
+		max-width: 457px;
+		display: flex;
+		flex-direction: column;
+	}
+	.jobs {
+		.job {
+			padding: 36px 48px;
+		}
+	}
 }
 /**************************************************/
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
+	.jobs {
+		display: flex;
+		text-align: center;
 
+		.job {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 36px 32px;
+			gap: 20px;
+		}
+		.cta {
+			width: 100%;
+		}
+	}
+}
 
-    section.jobs {
-        display: flex;
-        text-align: center;
-
-        .job {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 36px 32px;
-            gap: 20px;
-        }
-        .cta {
-            width: 100%;
-        }
-    }
-    
+@media screen and (width <=576px) {
+	.hero__small {
+		&.careers {
+			background-image: linear-gradient(to bottom, $hero-bg, $hero-bg),
+				url('./images/careers/career_header_small.webp');
+		}
+	}
 }
